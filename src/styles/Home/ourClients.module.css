@@ -1,0 +1,50 @@
+.ourClientsWrap {
+  padding: 4%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.ourClientsContainer {
+  position: relative;
+}
+
+.ourClientsTop,
+.ourClientsBottom {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+
+  width: 100%;
+  height: 80px;
+  background-color: var(--primary-color);
+}
+
+.ourClientsTop {
+  top: 0;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.ourClientsBottom {
+  bottom: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.ourClientsImages {
+  display: flex;
+  gap: 40px;
+  overflow-x: scroll;
+}
+
+.ourClientsImages::-webkit-scrollbar {
+  display: none;
+}
+
+.eachImage {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+}

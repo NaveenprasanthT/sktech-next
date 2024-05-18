@@ -1,0 +1,14 @@
+.homeBannerWrap {}
+
+.homeBannerContainer {}
+
+.homeBannerImageWrap {
+  width: 100vw !important;
+  height: calc(95vh - 100px) !important;
+}
+
+.homeBannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

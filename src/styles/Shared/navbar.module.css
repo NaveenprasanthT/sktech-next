@@ -1,0 +1,53 @@
+.navbarWrap {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  height: 100px;
+  padding: 0px 45px;
+
+  display: grid;
+  grid-template-columns: 45% 55%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+.navbarLeft {
+  width: inherit;
+}
+
+.logoImage {
+  width: auto;
+  height: 65px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.navbarRight {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbarRight ul {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.navbarRight ul li {
+  display: flex;
+  gap: 20px;
+
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.emptyDiv {
+  height: 100px;
+}

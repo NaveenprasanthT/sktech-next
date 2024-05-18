@@ -1,0 +1,10 @@
+.sharedButton {
+  width: max-content;
+
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 12px 25px;
+  background-color: #1B1B1B;
+  border: 2px solid #FFFFFF1e;
+  cursor: pointer;
+}

@@ -1,0 +1,91 @@
+.productWrap {
+  padding: 4%;
+  background-color: var(--black-color);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.productContentImage {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 5vw;
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productContent {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.productContent h2 {
+  text-decoration: underline;
+}
+
+.productContent h3 {}
+
+.emptyCircle {
+  width: 10px;
+  height: 10px;
+  background-color: var(--desc-color-2);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.buttonWrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.buttonWrap button {
+  width: max-content;
+  padding: 12px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border: none;
+  background-color: #DFDFDF;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.buttonWrap button span {
+  font-size: 16.44px;
+  color: var(--primary-color);
+}
+
+.buttonWrap button span:last-child {
+  display: flex;
+}
+
+.imageWrap {
+  width: 100%;
+  height: 380px;
+  overflow-y: scroll;
+}
+
+.imageWrap::-webkit-scrollbar {
+  display: none;
+}
+
+.sliderImageWrap {
+  width: inherit;
+  height: inherit;
+}
+
+.sliderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

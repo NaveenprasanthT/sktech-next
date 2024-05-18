@@ -1,0 +1,27 @@
+.sectionHeaderWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionContent h1 {}
+
+.sectionContent h6 {}
+
+.sectionHeaderWrap h2 {
+  width: 60%;
+
+  font-size: 20px;
+  color: var(--desc-color-2);
+  text-align: right;
+}
+
+.sectionHeaderWrap h2 span {
+  color: var(--title-color);
+}

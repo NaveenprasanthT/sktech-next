@@ -1,0 +1,16 @@
+.inputWrap {
+  width: 100%;
+  display: flex;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #BCC7CE;
+
+  font-size: 22px;
+  color: #BCC7CE;
+}
