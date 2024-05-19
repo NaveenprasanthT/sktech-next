@@ -9,6 +9,7 @@ import ProductAndService from "@/components/Home/ProductService";
 import OurClients from "@/components/Home/OurClients";
 import Media from "@/components/Home/Media";
 import Enquiry from "@/components/Home/Enquiry";
+import Footer from "@/components/Shared/Footer";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <OurClients />
         <Media />
         <Enquiry />
+        <Footer />
       </div>
     </>
   );
