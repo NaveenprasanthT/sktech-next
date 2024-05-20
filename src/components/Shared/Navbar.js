@@ -19,11 +19,11 @@ function Navbar() {
         </div>
         <div className={styles.navbarRight}>
           <ul>
-            <li>Home</li>
+            <Link href="/" style={{ textDecoration: "none" }}><li>Home</li></Link>
             <li>Products & Services</li>
-            <Link href="/aboutus" style={{textDecoration:"none"}}><li>About us</li></Link>
+            <Link href="/aboutus" style={{ textDecoration: "none" }}><li>About us</li></Link>
             <li>Support</li>
-            <li>Contact us <span><MessageIcon /></span> </li>
+            <Link href="/contactus" style={{ textDecoration: "none" }}><li>Contact us <span><MessageIcon /></span> </li></Link>
           </ul>
         </div>
       </div>

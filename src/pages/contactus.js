@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '@/components/Shared/Navbar';
-import AboutUsMain from '@/components/AboutUs/AboutUsMain';
 import Footer from '@/components/Shared/Footer';
+import ContactUsMain from '@/components/ContactUs/ContactUsMain';
 
-const AboutUsPage = () => {
+const ContactUsPage = () => {
   return (
     <div>
       <Navbar />
-      <AboutUsMain />
+      <ContactUsMain />
       <Footer />
     </div>
   );
 }
 
-export default AboutUsPage;
+export default ContactUsPage;

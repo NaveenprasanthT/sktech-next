@@ -1,9 +1,4 @@
-.aboutUsWrapper{
-    width: 100%;
-    height: 100%;
-}
-
-.abtUsContainer{
+.abtUsContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,70 +6,104 @@
     margin: 70px 0;
     width: 100%;
 }
-.abtUsTitle{
-    font-size: 16px;
+
+.abtUsTitle {
     margin-bottom: 20px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--title-color);
 }
-.abtUsHeader{
-    width: 45%;
-    display: flex;
+
+.abtUsHeader {
+    width: 80%;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+
+    font-size: 64px;
 }
+
 .abtUsImg {
-    width: 26%;
-    height: 270px;
+    width: 53%;
+    height: 430px;
     border-radius: 20px;
-    margin: 40px 0;
-    object-fit:cover
+    margin: 50px 0;
+    object-fit: cover
 }
-.abtUsDesc{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align:center;
-    width: 75%;
-    line-height: 27px;
-    font-weight: 400;
+
+.abtUsDesc {
+    width: 92%;
+    font-weight: 300;
+    text-align: center;
+    line-height: 40px;
 }
-.abtUsDetailsWrap{
+
+.abtUsDetailsWrap {
     display: flex;
     flex-direction: column;
-    width:100%;
-    align-items: center;
-    justify-content: center;
-}
-.abtUsDetailContainer{
-    display: flex;
-    margin:60px 0;
-    width:80%;
-}
-.abtUsDetailTitle{
-    display:flex;
-    flex:1;
-    align-items:flex-start;
-    justify-content:center;
-    text-align:start;
-}
-.abtUsDetailDesc{
-    flex:1;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content:flex-start;
-    text-align:start;
-    gap:20px;
-}
-.abtUsline{
-    border:1px solid #393939;
-    width:90%;
-}
-.abtUsCountCon{
     width: 100%;
-    display: flex;
-    gap: 80px;
     align-items: center;
     justify-content: center;
+}
+
+.abtUsDetailsWrap p {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--title-color);
+    line-height: 32px;
+}
+
+.abtUsDetailContainer {
+    display: flex;
+    margin: 60px 0;
+    width: 80%;
+}
+
+.abtUsDetailTitle {
+    margin-left: 2%;
+    flex: 1;
+}
+
+.abtUsDetailTitle h1 {
+    font-weight: 500;
+    font-size: 47.9px;
+}
+
+.abtUsDetailDesc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    gap: 20px;
+}
+
+.abtUsline {
+    border: 1px solid #393939;
+    width: 90%;
+}
+
+.abtUsCountCon {
+    padding: 5vh 0 8vh;
+    width: 75%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutEachCount {
+    flex: 1;
+    border-top: .5px solid #8080803e;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutEachCount h1 {
+    font-size: 86px;
+    font-weight: 600;
+}
+
+.aboutEachCount h3 {
+    font-size: 19.1px;
+    font-weight: 400;
 }
