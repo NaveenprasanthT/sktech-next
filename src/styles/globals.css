@@ -23,6 +23,7 @@ body {
   --black-color: #0B0B0B;
 }
 
+
 h1 {
   font-size: 32px;
   font-weight: 700;
@@ -52,3 +53,4 @@ p {
   font-weight: 500;
   color: var(--paragraph-color);
 }
+

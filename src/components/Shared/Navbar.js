@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '@/styles/Shared/navbar.module.css';
 import Image from 'next/image';
 import { MessageIcon } from './SvgIcon';
+import Link from 'next/link';
 
 function Navbar() {
   return (
@@ -20,7 +21,7 @@ function Navbar() {
           <ul>
             <li>Home</li>
             <li>Products & Services</li>
-            <li>About us</li>
+            <Link href="/aboutus" style={{textDecoration:"none"}}><li>About us</li></Link>
             <li>Support</li>
             <li>Contact us <span><MessageIcon /></span> </li>
           </ul>
