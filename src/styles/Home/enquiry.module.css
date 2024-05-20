@@ -63,7 +63,7 @@
 
 .locationWrap {
   border-left: 1px solid #FFFFFF4e;
-  padding-left: 10px;
+  padding-left: 15px;
 
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@
 .circleInRound {
   position: absolute;
   top: 2px;
-  left: -15px;
+  left: -20px;
   z-index: 1;
 
   width: 10px;
