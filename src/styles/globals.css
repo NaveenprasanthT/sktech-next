@@ -26,6 +26,8 @@ body {
   --black-color-4: #101010;
   --gray-color: #A3A3A3;
   --gray-color-2: rgba(190, 190, 190, 0.8);
+
+  --privacy-content-size:22px;
 }
 
 

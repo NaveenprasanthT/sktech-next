@@ -1,0 +1,49 @@
+.ppWrapper {
+    padding: 6% 16%;
+    width: 100%;
+    background: var(--black-color-4);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ppTitle {
+    border-bottom: 0.1px solid #D2D2D2;
+    width: max-content;
+    font-size: var(--privacy-content-size);
+    color: #D2D2D2;
+    margin: 30px 0;
+    line-height: 30.8px;
+    font-weight: 700;
+}
+.ppList{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 0 40px;
+    color: #D2D2D2E5;
+    font-size: var(--privacy-content-size);
+    /* gap:15px; */
+    line-height: 30.8px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+.ppDescription {
+    color: #D2D2D2E5;
+   font-size: var(--privacy-content-size);
+   line-height: 30.8px;
+   font-weight: 300;
+   /* margin-bottom: 30px; */
+}
+.ppBottomContent{
+    color: #D2D2D2E5;
+    font-size: var(--privacy-content-size);
+    line-height: 30.8px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+.ppInfo{
+    margin-top: 15px;
+    font-size: var(--privacy-content-size);
+    font-weight: 600;
+    color: #D2D2D2;
+    line-height: 30.8px;
+}
