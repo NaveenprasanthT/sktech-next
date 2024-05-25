@@ -1,0 +1,62 @@
+.productBannerWrap {
+  padding: 5%;
+  background-color: var(--black-color-2);
+
+  display: grid;
+  grid-template-columns: 37.5% 58%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productBannerDetails {}
+
+.productBannerDetails button {
+  margin: 50px 0 0;
+  padding: 22px 60px;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -1px;
+
+  color: var(--black-color-3);
+  background-color: var(--title-color);
+}
+
+.productBannerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.productBannerContent span {
+  font-size: 18px;
+  color: var(--gray-color);
+  font-weight: 600;
+  text-decoration: underline;
+  letter-spacing: -1px;
+}
+
+.productBannerContent h1 {
+  width: 90%;
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.productBannerContent p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.5px;
+  letter-spacing: -1px;
+  /* text-align: justify; */
+  color: var(--gray-color-2);
+}
+
+.productBannerImage {
+  width: 100%;
+  height: 585px;
+  object-fit: cover;
+  border-radius: 20px;
+}
