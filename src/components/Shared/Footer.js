@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from '@/styles/Shared/footer.module.css';
 import Image from 'next/image';
 import SharedButton from './Button';
+import Link from 'next/link';
 
 
 function Footer() {
@@ -86,8 +87,8 @@ function Footer() {
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <h5>Privacy Policy</h5>
-        <h5>Terms & Conditions</h5>
+        <Link href="/privacypolicy" style={{textDecoration:"none"}}><h5>Privacy Policy</h5></Link>
+        <Link href="/termsconditions" style={{textDecoration:"none"}}><h5>Terms & Conditions</h5></Link>
         <h5>COPYRIGHT Sktechnosys. ALL RIGHTS RESERVED</h5>
       </div>
     </div>
