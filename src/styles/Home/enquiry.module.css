@@ -83,6 +83,10 @@
   text-decoration: underline;
 }
 
+.sansFont {
+  font-family: "Open Sans", sans-serif;
+}
+
 .circleInRound {
   position: absolute;
   top: 2px;
@@ -112,4 +116,10 @@
 .mapWrap iframe {
   width: inherit;
   height: inherit;
+}
+
+@media screen and (max-width: 1700px) {
+  .eachLocation span svg {
+    width: 18px;
+  }
 }

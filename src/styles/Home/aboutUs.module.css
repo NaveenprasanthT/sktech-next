@@ -34,3 +34,18 @@
 .aboutUsContainer button {
   margin-top: 10px;
 }
+
+@media screen and (max-width: 1700px) {
+  .aboutUsWrap {
+    display: grid;
+    grid-template-columns: 45% auto;
+  }
+
+  .aboutUsImage {
+    width: 100%;
+  }
+
+  .backgroundText {
+    font-size: 16px;
+  }
+}

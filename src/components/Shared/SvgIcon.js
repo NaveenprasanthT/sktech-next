@@ -71,3 +71,11 @@ export function PointArrow() {
     </svg>
   );
 }
+
+export function NavbarDropDownArrow() {
+  return (
+    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.00265 12.3243L6.37207 6.95487L1.00265 1.58545" stroke="white" stroke-width="1.38071" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  );
+}
