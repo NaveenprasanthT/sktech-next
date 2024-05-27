@@ -14,3 +14,10 @@
   font-size: 22px;
   color: #BCC7CE;
 }
+
+@media screen and (max-width: 1700px) {
+  .inputField {
+    padding: 7px; 
+    font-size: 18px;
+  }
+}

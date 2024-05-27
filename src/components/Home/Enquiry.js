@@ -70,7 +70,7 @@ function Enquiry() {
           <div className={styles.locationDetails}>
             <div className={styles.eachLocation}>
               <span><EnquiryCallIcon /></span>
-              <h2>+918105625375</h2>
+              <h2 className={styles.sansFont}>+918105625375</h2>
             </div>
             <div className={styles.eachLocation}>
               <span><EnquiryMailIcon /></span>

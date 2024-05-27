@@ -89,3 +89,26 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 1700px) {
+  .productContent {
+    gap: 18px;
+  }
+
+  .emptyCircle {
+    width: 7px;
+    height: 7px;
+  }
+
+  .buttonWrap button {
+    padding: 8px 23px;
+  }
+
+  .buttonWrap button span {
+    font-size: 14.44px;
+  }
+
+  .imageWrap {
+    height: 340px;
+  }
+}

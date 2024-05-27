@@ -48,3 +48,10 @@
   width: 350px;
   object-fit: cover;
 }
+
+@media screen and (max-width: 1700px) {
+  .eachImage {
+    height: 330px;
+    width: 280px;
+  }
+}
