@@ -56,11 +56,11 @@ function Navbar() {
       subMenu: [
         {
           title: 'Ultra speed thermal printer',
-          url: '/product/',
+          url: '/product/thermal-printers?id=1',
         },
         {
           title: 'High speed thermal printer',
-          url: '/product/',
+          url: '/product/thermal-printers?id=2',
         },
       ],
     },
@@ -71,19 +71,19 @@ function Navbar() {
       subMenu: [
         {
           title: 'SK-POS Heavy Duty Cash Drawer',
-          url: '/product/',
+          url: '/product/peripheral?id=1',
         },
         {
           title: 'Monitors',
-          url: '/product/',
+          url: '/product/peripheral?id=2',
         },
         {
           title: 'Magnetic Stripe Readers (MSR)',
-          url: '/product/',
+          url: '/product/peripheral?id=3',
         },
         {
           title: 'VFD & POLE DISPLAY',
-          url: '/product/',
+          url: '/product/peripheral?id=4',
         },
       ],
     },
