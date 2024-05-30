@@ -131,3 +131,276 @@
   font-size: 14px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1700px) {
+  .footerTop {
+    grid-template-columns: 24% 66.5%;
+  }
+
+  .footerTopLeft span {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .logoContainer {
+    padding: 20px;
+    height: 90px;
+  }
+
+  .footerMenus li {
+    font-size: 18px;
+  }
+
+  .newLetterContainer h5 {
+    font-size: 14px;
+  }
+
+  .newsLetterInput {
+    padding: 0 0 4px;
+  }
+
+  .newsLetterInput input {
+    font-size: 14.6px;
+  }
+
+  .mediaLogo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .newsLetterInput button {
+    padding: 4px 0;
+    width: 115px;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .footerBottom {
+    padding: 20px 25%;
+  }
+
+  .footerBottom h5 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .footerTop {
+    grid-template-columns: 22% 70.5%;
+  }
+
+  .footerTopLeft {
+    gap: 10px;
+  }
+
+  .footerTopLeft span {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .logoContainer {
+    padding: 18px;
+    height: 75px;
+  }
+
+  .footerTopRight {
+    gap: 8vh;
+  }
+
+  .footerMenus li {
+    font-size: 17px;
+  }
+
+  .newLetterContainer h5 {
+    font-size: 14px;
+  }
+
+  .newsLetterInput {
+    padding: 0 0 4px;
+  }
+
+  .newsLetterInput input {
+    font-size: 14.6px;
+  }
+
+  .mediaLogo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .newsLetterInput button {
+    padding: 4px 0;
+    width: 115px;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .footerBottom {
+    padding: 20px 20%;
+  }
+
+  .footerBottom h5 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footerTop {
+    grid-template-columns: 20% 72.5%;
+  }
+
+  .footerTopLeft {
+    gap: 10px;
+  }
+
+  .footerTopLeft span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .logoContainer {
+    padding: 14px;
+    height: 60px;
+  }
+
+  .footerTopRight {
+    gap: 6vh;
+  }
+
+  .footerMenus li {
+    font-size: 16px;
+  }
+
+  .newLetterContainer {
+    gap: 20px;
+  }
+
+  .newLetterContainer h5 {
+    font-size: 14px;
+  }
+
+  .newsLetterInput {
+    padding: 0 0 4px;
+  }
+
+  .newsLetterInput input {
+    font-size: 14.6px;
+  }
+
+  .mediaLogo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .newsLetterInput button {
+    padding: 4px 0;
+    width: 115px;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .footerBottom {
+    padding: 15px 10%;
+  }
+
+  .footerBottom h5 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footerTop {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footerTopLeft span {
+    display: none;
+  }
+
+  .footerMenus {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footerMenus li {
+    font-size: 13.5px;
+  }
+
+  .footerBottom {
+    padding: 15px 4%;
+    text-align: center;
+
+    gap: 10px;
+  }
+
+  .footerBottom h5 {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footerMenus li {
+    font-size: 12px;
+  }
+
+  .newLetterContainer {
+    gap: 10px;
+  }
+
+  .newLetterContainer h5 {
+    font-size: 12px;
+  }
+
+  .newsLetterInput {
+    padding: 0 0 4px;
+  }
+
+  .newsLetterInput input {
+    font-size: 12.6px;
+  }
+
+  .mediaLogo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .newsLetterInput button {
+    padding: 4px 0;
+    width: 100px;
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .footerBottom {
+    padding: 15px 5%;
+  }
+
+  .footerBottom h5 {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footerMenus {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsLetterWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    align-items: normal;
+  }
+}

@@ -31,6 +31,12 @@
   border-radius: 10px;
 }
 
+.aboutUsImageMobile {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
 .aboutUsContainer button {
   margin-top: 10px;
 }
@@ -47,5 +53,46 @@
 
   .backgroundText {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .aboutUsWrap {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+
+  .aboutUsImage {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .aboutUsImageMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutUsWrap {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .aboutUsImage {
+    display: none;
+  }
+
+  .aboutUsContainer {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .backgroundText {
+    padding: 4px 12px;
+
+    font-size: 14px;
+    border-radius: 10px;
   }
 }

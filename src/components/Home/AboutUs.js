@@ -18,6 +18,13 @@ function AboutUs() {
         <h4 className={styles.backgroundText}>
           "Welcome to S K TECHNOSYS"
         </h4>
+        <Image
+        src="/assets/Home/aboutUs.png"
+        alt="aboutImage"
+        width={1000}
+        height={1000}
+        className={styles.aboutUsImageMobile}
+      />
         <p>
           S K Technosys is an Industry Expertise in Hospitality and Retail segment in providing end to end IT Solutions and more with best in class Technology Associates.
         </p>

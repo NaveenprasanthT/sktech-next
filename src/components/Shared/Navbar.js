@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '@/styles/Shared/navbar.module.css';
 import Image from 'next/image';
-import { MessageIcon, NavbarDropDownArrow } from './SvgIcon';
+import { CloseIcon, MessageIcon, NavbarDropDownArrow, ToggleIcon } from './SvgIcon';
 import Link from 'next/link';
 
 import ClickAwayListener from '@mui/material/ClickAwayListener';
@@ -11,6 +11,7 @@ import Popper from '@mui/material/Popper';
 
 function Navbar() {
   const [open, setOpen] = React.useState(false);
+  const [openNavbar, setOpenNavbar] = useState(false);
   const anchorRef = React.useRef(null);
 
   const handleToggle = () => {
@@ -23,6 +24,7 @@ function Navbar() {
     }
 
     setOpen(false);
+    setOpenNavbar(false);
   };
 
   const [productMenuData, setProductMenuData] = useState([
@@ -97,13 +99,18 @@ function Navbar() {
           ...menu,
           showDropDown: !menu.showDropDown,
         };
+      } else {
+        finalMenu = {
+          ...menu,
+          showDropDown: false,
+        };
       }
       return finalMenu;
     }));
   };
 
   return (
-    <>
+    <div className={styles.navbar}>
       <div className={styles.navbarWrap}>
         <div className={styles.navbarLeft}>
           <Image
@@ -180,10 +187,59 @@ function Navbar() {
             <li>Support</li>
             <Link href="/contactus" style={{ textDecoration: "none" }}><li><span>Contact us</span> <span><MessageIcon /></span> </li></Link>
           </ul>
+          <div className={styles.toggleWrap}>
+            <span onClick={() => setOpenNavbar(true)}><ToggleIcon /></span>
+          </div>
         </div>
+        <div
+          className={styles.mobileNavbarWrap}
+          style={{ right: openNavbar ? '0' : '-70vw' }}
+        >
+          <div className={styles.navbarClose} onClick={() => setOpenNavbar(false)}><CloseIcon /></div>
+          <ul>
+            <Link href="/" style={{ textDecoration: "none" }}><li onClick={() => setOpenNavbar(false)}>Home</li></Link>
+            {/* <li
+            ref={anchorRef}
+            onClick={handleToggle}
+          >
+            <span>Products & Services</span>
+            <span className={styles.menuDropDownArrow}><NavbarDropDownArrow /></span>
+          </li> */}
+            <div className={styles.mobileNavbarProductWrap}>
+              {productMenuData?.map((menu, index) => (
+                <div className={styles.menuContainer} key={index}>
+                  <div
+                    onClick={() => handleDorpDownMenu(menu.id)}
+                    className={styles.mobileMenuHeader}
+                  >
+                    <h3>{menu.title}</h3>
+                    <span
+                      style={{ transform: menu.showDropDown ? 'rotate(90deg)' : 'rotate(0deg)' }}
+                    >
+                      <NavbarDropDownArrow />
+                    </span>
+                  </div>
+                  <div
+                    style={{ height: menu.showDropDown ? `${menu.subMenu.length * 35}px` : '0px' }}
+                    className={styles.subMenuContainer}
+                  >
+                    {menu?.subMenu?.map((subMenuItem, subIndex) => (
+                      <Link href={subMenuItem?.url} key={subIndex}>
+                        <p onClick={handleClose}>{subMenuItem?.title}</p>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <Link href="/aboutus" style={{ textDecoration: "none" }}><li>About us</li></Link>
+            <li onClick={() => setOpenNavbar(false)}>Support</li>
+            <Link href="/contactus" style={{ textDecoration: "none" }}><li onClick={() => setOpenNavbar(false)}><span>Contact us</span> <span><MessageIcon /></span> </li></Link>
+          </ul >
+        </div >
       </div>
       <div className={styles.emptyDiv} />
-    </>
+    </div>
   );
 }
 

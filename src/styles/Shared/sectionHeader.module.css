@@ -25,3 +25,32 @@
 .sectionHeaderWrap h2 span {
   color: var(--title-color);
 }
+
+.sectionHeaderWrap button {
+  width: max-content;
+}
+
+@media screen and (max-width: 1000px) {
+  .sectionHeaderWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .sectionHeaderWrap h2 {
+    width: 90%;
+
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sectionHeaderWrap h2 {
+    width: 95%;
+
+    font-size: 13px;
+    text-align: left;
+  }
+}

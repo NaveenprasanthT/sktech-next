@@ -160,3 +160,229 @@
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1700px) {
+  .productWrap {
+    padding: 5%;
+    gap: 40px;
+  }
+
+  .buttonWrap {
+    gap: 20px;
+  }
+
+  .buttonWrap button {
+    font-size: 18px;
+    font-weight: 500;
+
+    padding: 16px 30px;
+  }
+
+  .productContentWrap {
+    gap: 45px;
+  }
+
+  .productContentHeader h1 {
+    font-size: 24px;
+  }
+
+  .productContentHeader p {
+    font-size: 18px;
+  }
+
+  .mainImageWrap {
+    height: 480px;
+  }
+
+  .eachImageWrap {
+    height: 120px;
+  }
+
+  .featuresWrap h2 {
+    font-size: 20px;
+  }
+
+  .featuresContainer {
+    margin: 25px 0 0 25px;
+  }
+
+  .featuresContainer li {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .brochureWrap h1 {
+    font-size: 20px;
+  }
+
+  .brochureButton {
+    font-size: 20.9px;
+    font-weight: 600;
+    padding: 10px 37px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .mainImageWrap {
+    height: 400px;
+  }
+
+  .eachImageWrap {
+    height: 80px;
+  }
+
+  .productContentWrap {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .productWrap {
+    padding: 4%;
+    gap: 30px;
+  }
+
+  .buttonWrap {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .buttonWrap button {
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 14px 25px;
+  }
+
+  .productContentWrap {
+    gap: 35px;
+  }
+
+  .productContentHeader h1 {
+    font-size: 20px;
+  }
+
+  .productContentHeader p {
+    font-size: 15px;
+  }
+
+  .mainImageWrap {
+    height: 300px;
+  }
+
+  .eachImageWrap {
+    height: 60px;
+  }
+
+  .featuresWrap h2 {
+    font-size: 17px;
+  }
+
+  .featuresContainer {
+    margin: 20px 0 0 25px;
+  }
+
+  .featuresContainer li {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .brochureWrap h1 {
+    font-size: 18px;
+  }
+
+  .brochureWrap {
+    padding: 25px 0;
+  }
+
+  .brochureButton {
+    font-size: 18.9px;
+    font-weight: 600;
+    padding: 8px 32px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .productContentAndImage {
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+
+  .productContentWrap {
+    gap: 30px;
+  }
+
+  .featureImagesWrap {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .buttonWrap {
+    gap: 10px;
+  }
+
+  .buttonWrap button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .productContentWrap {
+    gap: 20px;
+  }
+
+  .productContentHeader {
+    gap: 15px;
+  }
+
+  .productContentHeader h1 {
+    font-size: 16px;
+  }
+
+  .productContentHeader p {
+    font-size: 14px;
+  }
+
+  .mainImageWrap {
+    height: 45vh;
+  }
+
+  .eachImageWrap {
+    height: 50px;
+  }
+
+  .featuresWrap h2 {
+    font-size: 17px;
+  }
+
+  .featuresContainer {
+    margin: 20px 0 0 25px;
+  }
+
+  .featuresContainer li {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .brochureWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .brochureWrap h1 {
+    font-size: 18px;
+  }
+
+  .brochureWrap {
+    padding: 25px 0;
+  }
+
+  .brochureButton {
+    font-size: 18.9px;
+    font-weight: 600;
+    padding: 8px 32px;
+  }
+
+}

@@ -13,6 +13,13 @@ function ProductBanner(props) {
           <h1>{bannerContent?.title}</h1>
           <p>{bannerContent?.description}</p>
         </div>
+        <Image
+        src={bannerContent?.imagePath}
+        alt="Product image"
+        width={1000}
+        height={1000}
+        className={styles.productBannerImageMobile}
+      />
         {bannerContent?.buttonLabel
           && (
             <SharedButton

@@ -9,6 +9,18 @@
 
 .homeBannerImage {
   width: 100%;
-  height: 100%;
+  height: calc(95vh - 100px) !important;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .homeBannerContainer {
+    height: 70vh;
+  }
+
+  .homeBannerImage {
+    width: 100%;
+    height: 70vh !important;
+    object-fit: cover;
+  }
 }

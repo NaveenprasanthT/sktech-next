@@ -85,7 +85,7 @@
     width: 75%;
     display: flex;
     gap: 40px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 
@@ -101,9 +101,258 @@
 .aboutEachCount h1 {
     font-size: 86px;
     font-weight: 600;
+    font-family: "Open Sans", sans-serif;
 }
 
 .aboutEachCount h3 {
     font-size: 19.1px;
     font-weight: 400;
+}
+
+@media screen and (max-width: 1700px) {
+    .abtUsContainer {
+        margin: 50px 0;
+    }
+
+    .abtUsHeader {
+        font-size: 48px;
+    }
+
+    .abtUsDesc {
+        width: 92%;
+        line-height: 35px;
+    }
+
+    .abtUsDetailsWrap p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .abtUsDetailTitle h1 {
+        font-size: 36px;
+    }
+
+    .aboutEachCount {
+        gap: 5px;
+    }
+
+    .aboutEachCount h1 {
+        font-size: 66px;
+    }
+
+    .aboutEachCount h3 {
+        font-size: 17.1px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .abtUsContainer {
+        margin: 40px 0;
+    }
+
+    .abtUsHeader {
+        font-size: 44px;
+    }
+
+    .abtUsTitle {
+        margin-bottom: 10px;
+    }
+
+    .abtUsImg {
+        height: 400px;
+        margin: 30px 0;
+    }
+
+    .abtUsDesc {
+        width: 92%;
+        line-height: 30px;
+    }
+
+    .abtUsDetailsWrap p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .abtUsDetailTitle h1 {
+        font-size: 32px;
+    }
+
+    .aboutEachCount {
+        gap: 5px;
+    }
+
+    .aboutEachCount h1 {
+        font-size: 56px;
+    }
+
+    .aboutEachCount h3 {
+        font-size: 16.1px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .abtUsContainer {
+        margin: 30px 0;
+    }
+
+    .abtUsHeader {
+        font-size: 32px;
+    }
+
+    .abtUsImg {
+        height: 370px;
+        margin: 25px 0;
+    }
+
+    .abtUsDesc {
+        width: 92%;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+    .abtUsDetailTitle {
+        margin: 0;
+    }
+
+    .abtUsDetailContainer {
+        margin: 30px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .abtUsDetailsWrap p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .abtUsDetailTitle h1 {
+        font-size: 32px;
+    }
+
+    .aboutEachCount {
+        gap: 5px;
+    }
+
+    .aboutEachCount h1 {
+        font-size: 46px;
+    }
+
+    .aboutEachCount h3 {
+        font-size: 14.1px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .abtUsContainer {
+        margin: 25px 0;
+    }
+
+    .abtUsHeader {
+        font-size: 30px;
+    }
+
+    .abtUsImg {
+        height: 350px;
+        width: 70%;
+        margin: 25px 0;
+    }
+
+    .abtUsDesc {
+        width: 92%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+    .abtUsDetailTitle {
+        margin: 0;
+    }
+
+    .abtUsDetailContainer {
+        margin: 25px 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .abtUsDetailsWrap p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .abtUsDetailTitle h1 {
+        font-size: 32px;
+    }
+
+    .aboutEachCount {
+        gap: 5px;
+    }
+
+    .aboutEachCount h1 {
+        font-size: 36px;
+    }
+
+    .aboutEachCount h3 {
+        font-size: 13.1px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .abtUsContainer {
+        margin: 15px 0;
+    }
+
+    .abtUsHeader {
+        font-size: 22px;
+    }
+
+    .abtUsImg {
+        height: 300px;
+        width: 85%;
+        margin: 25px 0;
+    }
+
+    .abtUsDesc {
+        width: 92%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .abtUsDetailTitle {
+        margin: 0;
+    }
+
+    .abtUsDetailContainer {
+        margin: 15px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .abtUsDetailsWrap p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .abtUsCountCon {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .abtUsDetailTitle h1 {
+        font-size: 32px;
+    }
+
+    .aboutEachCount {
+        gap: 5px;
+    }
+
+    .aboutEachCount h1 {
+        font-size: 36px;
+    }
+
+    .aboutEachCount h3 {
+        font-size: 13.1px;
+    }
 }
