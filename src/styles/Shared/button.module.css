@@ -23,3 +23,19 @@
     padding: 10px 28px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .sharedButton {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sharedButton {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 20px;
+  }
+}

@@ -1,3 +1,7 @@
+.navbar {
+  position: relative;
+}
+
 .navbarWrap {
   position: fixed;
   z-index: 99;
@@ -52,6 +56,7 @@
 
 .navbarRight ul li span:last-child {
   display: flex;
+  justify-content: center;
 }
 
 .menuDropDownArrow {
@@ -122,6 +127,85 @@
   height: 35px;
 }
 
+.mobileNavbarWrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--black-color-3);
+
+  height: 100vh;
+  width: 70vw;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.mobileNavbarWrap ul {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+  list-style: none;
+
+  max-height: 100vh;
+  overflow-y: scroll;
+
+}
+
+.mobileNavbarWrap ul li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.mobileNavbarWrap ul li span:last-child svg {
+  width: 28px;
+}
+
+
+.mobileNavbarProductWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3vh;
+}
+
+.mobileMenuHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.mobileMenuHeader h3 {
+  font-size: 16px;
+  color: var(--title-color);
+}
+
+.mobileMenuHeader span {
+  display: flex;
+  margin: 1px 0 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbarClose {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1700px) {
   .logoImage {
     height: 47px;
@@ -141,5 +225,74 @@
 
   .navbarRight ul li span:last-child {
     width: 26px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .logoImage {
+    height: 43px;
+  }
+
+  .navbarWrap {
+    grid-template-columns: 35% 65%;
+  }
+
+  .navbarRight ul li {
+    font-size: 18px;
+    gap: 10px;
+  }
+
+  .menuHeader h3 {
+    font-size: 14px;
+  }
+
+  .subMenuContainer p {
+    font-size: 13px;
+  }
+
+  .navbarRight ul li span:last-child {
+    width: 26px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbarRight {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbarRight ul {
+    display: none;
+  }
+
+  .toggleWrap span {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbarWrap {
+    padding: 0 20px;
+    height: 70px;
+  }
+
+  .logoImage {
+    width: auto;
+    height: 35px;
+  }
+
+  .emptyDiv {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbarWrap {
+    padding: 0 20px;
+  }
+
+  .logoImage {
+    width: auto;
+    height: 25px;
   }
 }

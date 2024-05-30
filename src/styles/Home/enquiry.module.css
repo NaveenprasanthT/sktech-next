@@ -95,7 +95,7 @@
 
   width: 10px;
   height: 20px;
-  background-color: #000000;
+  background-color: var(--black-color);
 
   display: flex;
   align-items: center;
@@ -121,5 +121,84 @@
 @media screen and (max-width: 1700px) {
   .eachLocation span svg {
     width: 18px;
+  }
+
+  .enquiryForm {
+    gap: 3rem;
+  }
+
+  .eachLocation h2 {
+    font-size: 18px;
+  }
+
+  .round {
+    width: 8px;
+    height: 8px;
+  }
+
+  .mapWrap {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .enquiryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .enquiryForm {
+    gap: 2rem;
+  }
+
+  .singleRow {
+    gap: 20px;
+  }
+
+  .eachLocation {
+    gap: 12px;
+  }
+
+  .locationDetails {
+    gap: 5px;
+  }
+
+  .eachLocation span svg {
+    width: 16px;
+  }
+
+  .eachLocation h2 {
+    font-size: 16px;
+  }
+
+  .locationWrap {
+    gap: 10px;
+  }
+
+  .round {
+    width: 8px;
+    height: 8px;
+  }
+
+  .mapWrap {
+    height: 180px;
+  }
+
+  .enquiryFormContainer button {
+    margin: 30px 0 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .enquiryForm {
+    gap: 1rem;
+  }
+
+  .singleRow {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }

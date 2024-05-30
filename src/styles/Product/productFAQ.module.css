@@ -81,5 +81,113 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
 
+@media screen and (max-width: 1700px) {
+  .faqLeft h1 {
+    font-size: 26px;
+  }
+
+  .faqLeft p {
+    font-size: 18px;
+  }
+
+  .pointContainer span svg {
+    width: 16px;
+  }
+
+  .pointContainer h6 {
+    font-size: 14px;
+  }
+
+  .faqImageContainer {
+    height: 180px;
+  }
+
+  .faqRight p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .faqLeft h1 {
+    font-size: 22px;
+  }
+
+  .faqLeft p {
+    font-size: 16px;
+  }
+
+  .pointContainer span svg {
+    width: 14px;
+  }
+
+  .pointContainer h6 {
+    font-size: 12px;
+  }
+
+  .faqImageContainer {
+    height: 140px;
+  }
+
+  .faqRight {
+    gap: 20px;
+  }
+
+  .faqRight p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .faqWrap {
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+
+  .faqLeft {
+    gap: 15px;
+  }
+
+  .faqRight {
+    align-items: normal;
+  }
+
+  .faqRight p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .faqWrap {
+    gap: 20px;
+  }
+
+  .faqLeft h1 {
+    font-size: 18px;
+  }
+
+  .faqLeft p {
+    font-size: 14px;
+  }
+
+  .pointContainer span svg {
+    width: 12px;
+  }
+
+  .pointContainer h6 {
+    font-size: 12px;
+  }
+
+  .faqImageContainer {
+    height: 140px;
+  }
+
+  .faqRight {
+    gap: 15px;
+  }
+
+  .faqRight p {
+    font-size: 13px;
+  }
 }

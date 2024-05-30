@@ -54,4 +54,93 @@
     height: 330px;
     width: 280px;
   }
+
+  .ourClientsTop,
+  .ourClientsBottom {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .eachImage {
+    height: 310px;
+    width: 250px;
+  }
+
+  .ourClientsImages {
+    gap: 35px;
+  }
+
+  .ourClientsTop,
+  .ourClientsBottom {
+    height: 65px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ourClientsWrap {
+    gap: 15px;
+  }
+
+  .ourClientsImages {
+    gap: 30px;
+  }
+
+  .eachImage {
+    height: 260px;
+    width: 220px;
+  }
+
+  .ourClientsTop,
+  .ourClientsBottom {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .eachImage {
+    height: 230px;
+    width: 200px;
+  }
+
+  .ourClientsImages {
+    gap: 20px;
+  }
+
+  .ourClientsTop,
+  .ourClientsBottom {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .eachImage {
+    height: 200px;
+    width: 160px;
+  }
+
+  .ourClientsImages {
+    gap: 10px;
+  }
+
+  .ourClientsTop,
+  .ourClientsBottom {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .eachImage {
+    height: 190px;
+    width: 150px;
+  }
+
+  .ourClientsImages {
+    gap: 10px;
+  }
+
+  .ourClientsTop,
+  .ourClientsBottom {
+    height: 40px;
+  }
 }

@@ -123,3 +123,72 @@
   width: inherit;
   height: inherit;
 }
+
+.sansFont {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 1700px) {
+  .eachLocation span svg {
+    width: 18px;
+  }
+
+  .eachLocation h2 {
+    font-size: 18px;
+  }
+
+  .round {
+    width: 8px;
+    height: 8px;
+  }
+
+  .mapWrap {
+    height: 200px;
+  }
+
+  .enquiryFormContainer button {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .enquiryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .eachLocation {
+    gap: 12px;
+  }
+
+  .locationDetails {
+    gap: 5px;
+  }
+
+  .eachLocation span svg {
+    width: 16px;
+  }
+
+  .eachLocation h2 {
+    font-size: 16px;
+  }
+
+  .locationWrap {
+    gap: 10px;
+  }
+
+  .round {
+    width: 8px;
+    height: 8px;
+  }
+
+  .mapWrap {
+    height: 180px;
+  }
+
+  .enquiryFormContainer button {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}

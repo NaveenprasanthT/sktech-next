@@ -112,3 +112,52 @@
     height: 340px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .productContentImage {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .imageWrap {
+    height: 40vh;
+  }
+
+  .buttonWrap {
+    margin: 20px 0 0;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .buttonWrap button {
+    padding: 8px 22px;
+    gap: 10px;
+  }
+
+  .buttonWrap button span {
+    font-size: 14.44px;
+  }
+
+  .buttonWrap button svg {
+    width: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .buttonWrap {
+    gap: 15px;
+  }
+
+  .buttonWrap button {
+    padding: 5px 17px;
+    gap: 7px;
+  }
+
+  .buttonWrap button span {
+    font-size: 13.44px;
+  }
+
+  .buttonWrap button svg {
+    width: 16px;
+  }
+}

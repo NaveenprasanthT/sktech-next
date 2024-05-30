@@ -60,3 +60,125 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
+.productBannerImageMobile {
+  margin: 5% 0% 0%;
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1700px) {
+  .productBannerWrap {
+    padding: 4.5%;
+  }
+
+  .productBannerDetails button {
+    margin: 35px 0 0;
+    padding: 18px 45px;
+    font-size: 20px;
+  }
+
+  .productBannerContent span {
+    font-size: 16px;
+  }
+
+  .productBannerContent h1 {
+    font-size: 36px;
+  }
+
+  .productBannerContent p {
+    font-size: 16px;
+    line-height: 20.5px;
+  }
+
+  .productBannerImage {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .productBannerWrap {
+    grid-template-columns: 50% 45%;
+  }
+
+  .productBannerImage {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .productBannerWrap {
+    padding: 4%;
+    grid-template-columns: 60% 35%;
+  }
+
+  .productBannerDetails button {
+    margin: 35px 0 0;
+    padding: 14px 35px;
+    font-size: 18px;
+  }
+
+  .productBannerContent span {
+    font-size: 14px;
+  }
+
+  .productBannerContent h1 {
+    font-size: 28px;
+  }
+
+  .productBannerContent p {
+    font-size: 14px;
+    line-height: 18.5px;
+  }
+
+  .productBannerImage {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .productBannerWrap {
+    grid-template-columns: 1fr;
+  }
+
+  .productBannerImage {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .productBannerImageMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .productBannerDetails button {
+    margin: 15px 0 0;
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  .productBannerContent span {
+    font-size: 12px;
+  }
+
+  .productBannerContent h1 {
+    font-size: 24px;
+  }
+
+  .productBannerContent p {
+    font-size: 13px;
+    line-height: 16.5px;
+  }
+
+  .productBannerImage {
+    height: 300px;
+  }
+}
