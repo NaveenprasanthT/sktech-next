@@ -24,3 +24,15 @@
     object-fit: cover;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .homeBannerContainer {
+    height: 50vh;
+  }
+
+  .homeBannerImage {
+    width: 100%;
+    height: 50vh !important;
+    object-fit: cover;
+  }
+}

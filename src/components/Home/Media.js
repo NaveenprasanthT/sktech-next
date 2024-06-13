@@ -1,4 +1,4 @@
-import React,{useState,useRef} from 'react';
+import React, { useState, useRef } from 'react';
 import styles from '@/styles/Home/media.module.css'
 import SectionHeader from '../Shared/SectionHeader';
 import Slider from "react-slick";
@@ -18,7 +18,8 @@ function Media() {
     slidesToScroll: 1,
     className: styles.ReviewContainer,
     beforeChange: (current, next) => setSlideIndex(next),
-    centerMode: true,
+    centerMode: false,
+    arrows: false,
     prevArrow: null,
     nextArrow: null,
     responsive: [
@@ -74,6 +75,8 @@ function Media() {
     }
   ];
 
+  console.log(slideIndex === 0);
+
   return (
     <div className={styles.mediaWrap}>
       <SectionHeader
@@ -83,15 +86,34 @@ function Media() {
         buttonClick={() => console.log('Exploreeee')}
       />
       <div className={styles.mediaContainer}>
-      <div className={styles.ArrowContainer}><span onClick={handlePrev}><IoIosArrowDropleftCircle /></span></div>
         <Slider {...settings} className={styles.ReviewContainer} ref={sliderRef}>
           {list.map((show) => (
-            <div className={show.id === slideIndex ? styles.CenterActive : styles.Center}>
-              <Image src={show.img} width={1000} height={1000} className={styles.reviewImageLeft} />
+            <div
+              className={styles.reviewImageWrap}
+            >
+              <Image
+                src={show.img}
+                width={1000}
+                height={1000}
+                className={styles.reviewImage}
+                style={{
+                  transform: slideIndex === show.id ? 'scale(1.5)' : 'scale(1)',
+                  zIndex: slideIndex === show.id ? '99' : '1',
+                }}
+              />
             </div>
           ))}
         </Slider>
-        <div id='faq' className={styles.ArrowContainer}><span onClick={handleNext}><IoIosArrowDroprightCircle /></span></div>
+        <div className={styles.ArrowWrap}>
+          <div className={styles.ArrowContainer} onClick={handleNext}>
+            <span><IoIosArrowDroprightCircle /></span>
+            <h1>next</h1>
+          </div>
+          <div className={styles.ArrowContainer} onClick={handlePrev}>
+            <span ><IoIosArrowDropleftCircle /></span>
+            <h1>preview</h1>
+          </div>
+        </div>
       </div>
     </div>
   );
