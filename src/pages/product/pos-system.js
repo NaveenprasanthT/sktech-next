@@ -4,15 +4,17 @@ import ProductFAQ from '@/components/Product/ProductFAQ';
 import ProductView from '@/components/Product/ProductView';
 import Footer from '@/components/Shared/Footer';
 import Navbar from '@/components/Shared/Navbar';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 function POSSystem() {
+  const router = useRouter();
   const handleBannerButtonClick = () => {
-    console.log("Banner Button");
+    router.push('/contactus');
   };
 
   const bannerContent = {
-    imagePath: '/assets/Home/aboutUs.png',
+    imagePath: '/assets/Product/pos/posBanner.jpeg',
     smallTitle: 'POS systems',
     title: 'Power your business with flexible POS software.',
     description: 'A point of sale, or point of purchase, is where you ring up customers and accept payments. When customers check out online, walk up to your checkout counter, or pick out an item from your stand or booth, they’re at the point of sale. You can even do this on existing hardware you already use for your business—your computer.',
@@ -56,10 +58,10 @@ function POSSystem() {
           'Designed for Easy Installation and Service',
         ],
         productImages: [
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
+          '/assets/Product/pos/pos01.png',
+          '/assets/Product/pos/pos02.png',
+          '/assets/Product/pos/pos03.png',
+          '/assets/Product/pos/pos04.png',
         ],
       },
       {
@@ -78,10 +80,10 @@ function POSSystem() {
           'Designed for Easy Installation and Service',
         ],
         productImages: [
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
+          '/assets/Product/pos/extreme03.png',
+          '/assets/Product/pos/extreme01.png',
+          '/assets/Product/pos/extreme02.png',
+          '/assets/Product/pos/extreme04.png',
         ],
       },
       {
@@ -146,8 +148,8 @@ function POSSystem() {
       'Healthcare',
     ],
     faqImages: [
-      '/assets/Home/aboutUs.png',
-      '/assets/Home/productService.png',
+      '/assets/Product/pos/posBottom01.jpeg',
+      '/assets/Product/pos/posBottom02.jpeg',
     ],
     description: "When it comes to building a business, there's no one route to success. As you scale and strive for profitability, having the right tools and resources to guide you as you navigate the operational ins and outs can make all of the difference. From setting up your back office to pivoting and scaling, discover the tools you need to operate your business today and grow into the future.",
   };

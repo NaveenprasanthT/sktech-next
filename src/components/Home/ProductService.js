@@ -3,13 +3,16 @@ import styles from '@/styles/Home/productService.module.css';
 import SectionHeader from '../Shared/SectionHeader';
 import { ArrowIcon } from '../Shared/SvgIcon';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 function ProductAndService() {
+  const router = useRouter();
   const sliderImages = [
-    "/assets/Home/aboutUs.png",
     "/assets/Home/productService.png",
-    "/assets/Home/aboutUs.png",
-    "/assets/Home/productService.png",
+    "/assets/Home/productService01.jpeg",
+    "/assets/Home/productService02.jpeg",
+    "/assets/Home/productService03.jpeg",
+    "/assets/Home/productService04.jpeg",
   ];
 
   return (
@@ -17,8 +20,8 @@ function ProductAndService() {
       <SectionHeader
         title="Product and Services"
         subTitle="Transforming Hospitality and Retail with Our Cutting-Edge Products and Services."
-        buttonLabel="Explore All"
-        buttonClick={() => console.log('Exploreeee')}
+      // buttonLabel="Explore All"
+      // buttonClick={handleClick}
       />
       <div className={styles.productContentImage}>
         <div className={styles.productContainer}>
@@ -33,13 +36,13 @@ function ProductAndService() {
           </div>
           <div className={styles.buttonWrap}>
             <button
-              onClick={() => { }}
+              onClick={() => router.push('/product/pos-system?id=1')}
             >
               <span>View more</span>
               <span><ArrowIcon /></span>
             </button>
             <button
-              onClick={() => { }}
+              onClick={() => router.push('/contactus')}
             >
               <span>Get in Touch</span>
               <span><ArrowIcon /></span>

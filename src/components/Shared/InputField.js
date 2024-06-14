@@ -3,7 +3,7 @@ import styles from '@/styles/Shared/inputField.module.css';
 
 function InputField(props) {
   const localFuncToChangeValue = (event) => {
-    props?.onValueChange(event?.name, event?.value);
+    props?.onValueChange(event?.target?.name, event?.target?.value);
   };
   return (
     <div className={styles.inputWrap}>

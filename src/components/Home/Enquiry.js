@@ -4,15 +4,39 @@ import SectionHeader from '../Shared/SectionHeader';
 import InputField from '../Shared/InputField';
 import { EnquiryCallIcon, EnquiryLocationIcon, EnquiryMailIcon } from '../Shared/SvgIcon';
 import SharedButton from '../Shared/Button';
+import emailjs from 'emailjs-com';
 
 function Enquiry() {
+  const [buttonDisable, setButtonDisable] = useState(false);
   const [formData, setFormData] = useState({});
   const handleChange = (name, value) => {
     setFormData({
-      ...value,
+      ...formData,
       [name]: value,
     });
   }
+
+  const handleSubmit = async (e) => {
+    setButtonDisable(true);
+    e.preventDefault();
+
+    try {
+      const result = await emailjs.send(
+        'service_wr4az9p', // replace with your service ID
+        'template_wdjpi1h', // replace with your template ID
+        formData,
+        'ygUVr97Cj9AQfo7fx' // replace with your user ID
+      );
+
+      console.error('Send successfully', result);
+      setButtonDisable(false);
+      setFormData({});
+    } catch (error) {
+      setButtonDisable(false);
+      console.error('Error sending email:', error);
+    }
+  };
+
   return (
     <div className={styles.enquiryWrap}>
       <SectionHeader
@@ -63,7 +87,8 @@ function Enquiry() {
           </div>
           <SharedButton
             label="Submit"
-            buttonClick={() => { }}
+            buttonClick={handleSubmit}
+            disable={buttonDisable}
           />
         </div>
         <div className={styles.enquiryDetails}>

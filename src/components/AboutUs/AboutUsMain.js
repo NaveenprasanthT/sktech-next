@@ -30,7 +30,7 @@ function AboutUsMain() {
         <h1 className={Styles.abtUsHeader}>
           "Delivering Reliable IT Hardware Solutions for Your Business Needs"
         </h1>
-        <Image src="/assets/Home/aboutUs.png" alt="AboutUs" height={1000} width={1000} className={Styles.abtUsImg} />
+        <Image src="/assets/Home/aboutImg.png" alt="AboutUs" height={1000} width={1000} className={Styles.abtUsImg} />
         <h1 className={Styles.abtUsDesc}>
           "SKTechnosys is a leading provider of innovative IT hardware
           solutions, specializing in delivering top-notch products and expert

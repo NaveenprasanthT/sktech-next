@@ -2,8 +2,14 @@ import React from 'react';
 import styles from '@/styles/Home/aboutUs.module.css';
 import Image from 'next/image';
 import SharedButton from '../Shared/Button';
+import { useRouter } from 'next/router';
 
 function AboutUs() {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push('/aboutus');
+  };
+
   return (
     <div className={styles.aboutUsWrap}>
       <Image
@@ -19,12 +25,12 @@ function AboutUs() {
           "Welcome to S K TECHNOSYS"
         </h4>
         <Image
-        src="/assets/Home/aboutUs.png"
-        alt="aboutImage"
-        width={1000}
-        height={1000}
-        className={styles.aboutUsImageMobile}
-      />
+          src="/assets/Home/aboutUs.png"
+          alt="aboutImage"
+          width={1000}
+          height={1000}
+          className={styles.aboutUsImageMobile}
+        />
         <p>
           S K Technosys is an Industry Expertise in Hospitality and Retail segment in providing end to end IT Solutions and more with best in class Technology Associates.
         </p>
@@ -36,7 +42,7 @@ function AboutUs() {
         </p>
         <SharedButton
           label="Read More"
-          buttonClick={() => { }}
+          buttonClick={handleClick}
         />
       </div>
     </div>
