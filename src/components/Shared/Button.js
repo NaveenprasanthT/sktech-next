@@ -6,6 +6,7 @@ function SharedButton(props) {
     <button
       onClick={props?.buttonClick}
       className={styles.sharedButton}
+      disabled={props?.disable}
     >
       {props?.label}
     </button>

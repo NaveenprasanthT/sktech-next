@@ -24,11 +24,11 @@ function Footer() {
         </div>
         <div className={styles.footerTopRight}>
           <ul className={styles.footerMenus}>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Products & Services</li>
+            <Link href="/" style={{ textDecoration: "none" }}><li>Home</li></Link>
+            <Link href="/aboutus" style={{ textDecoration: "none" }}><li>About us</li></Link>
+            <Link href="/product/pos-system?id=1" style={{ textDecoration: "none" }}><li>Products & Services</li></Link>
             <li>Support</li>
-            <li>Contact us</li>
+            <Link href="/contactus" style={{ textDecoration: "none" }}><li>Contact us</li></Link>
           </ul>
           <div className={styles.newsLetterWrap}>
             <div className={styles.newLetterContainer}>
@@ -87,8 +87,8 @@ function Footer() {
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <Link href="/privacypolicy" style={{textDecoration:"none"}}><h5>Privacy Policy</h5></Link>
-        <Link href="/termsconditions" style={{textDecoration:"none"}}><h5>Terms & Conditions</h5></Link>
+        <Link href="/privacypolicy" style={{ textDecoration: "none" }}><h5>Privacy Policy</h5></Link>
+        <Link href="/termsconditions" style={{ textDecoration: "none" }}><h5>Terms & Conditions</h5></Link>
         <h5>COPYRIGHT Sktechnosys. ALL RIGHTS RESERVED</h5>
       </div>
     </div>

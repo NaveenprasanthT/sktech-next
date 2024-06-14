@@ -5,18 +5,16 @@ import SectionHeader from '../Shared/SectionHeader';
 
 function OurClients() {
   const sliderImages = [
-    "/assets/Home/aboutUs.png",
-    "/assets/Home/productService.png",
-    "/assets/Home/aboutUs.png",
-    "/assets/Home/productService.png",
-    "/assets/Home/aboutUs.png",
-    "/assets/Home/productService.png",
-    "/assets/Home/aboutUs.png",
-    "/assets/Home/productService.png",
-    "/assets/Home/aboutUs.png",
-    "/assets/Home/productService.png",
-    "/assets/Home/aboutUs.png",
-    "/assets/Home/productService.png",
+    "/assets/Home/scroll01.png",
+    "/assets/Home/scroll02.png",
+    "/assets/Home/scroll03.png",
+    "/assets/Home/scroll04.png",
+    "/assets/Home/scroll05.png",
+    "/assets/Home/scroll01.png",
+    "/assets/Home/scroll02.png",
+    "/assets/Home/scroll03.png",
+    "/assets/Home/scroll04.png",
+    "/assets/Home/scroll05.png",
   ];
 
   return (
@@ -29,13 +27,15 @@ function OurClients() {
         <div className={styles.ourClientsTop} />
         <div className={styles.ourClientsImages}>
           {sliderImages.map((each) => (
-            <Image
-              src={each}
-              alt="image"
-              width={1000}
-              height={1000}
-              className={styles.eachImage}
-            />
+            <div className={styles.eachImageContainer}>
+              <Image
+                src={each}
+                alt="image"
+                width={1000}
+                height={1000}
+                className={styles.eachImage}
+              />
+            </div>
           ))}
         </div>
         <div className={styles.ourClientsBottom} />

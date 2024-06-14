@@ -15,8 +15,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>SK Technosys</title>
-        <meta name="description" content="sk-technosys" />
+        <title>S K Technosys || Build to Conqure your Workload</title>
+        <meta name="title" content="S K Technosys - Powerhouse Performance for your Business." />
+        <meta name="description" content="Upgrade your IT operations with SK-POS. Powerful Point-of-Sale solutions by SK Technosys. Visit sktechnosys.in to learn more!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

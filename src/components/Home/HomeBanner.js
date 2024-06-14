@@ -23,8 +23,10 @@ function HomeBanner() {
   };
 
   const sliderImages = [
-    "/assets/Home/aboutUs.png",
-    "/assets/Home/productService.png",
+    "/assets/Home/banner01.webp",
+    "/assets/Home/banner02.webp",
+    "/assets/Home/banner03.webp",
+    "/assets/Home/banner04.webp",
   ];
 
   return (

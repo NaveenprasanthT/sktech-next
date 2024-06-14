@@ -43,10 +43,16 @@
   display: none;
 }
 
-.eachImage {
+.eachImageContainer {
   height: 350px;
   width: 350px;
-  object-fit: cover;
+  background-color: #FFFFFF;
+}
+
+.eachImage {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1700px) {
@@ -62,7 +68,7 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .eachImage {
+  .eachImageContainer {
     height: 310px;
     width: 250px;
   }
@@ -86,7 +92,7 @@
     gap: 30px;
   }
 
-  .eachImage {
+  .eachImageContainer {
     height: 260px;
     width: 220px;
   }
@@ -98,7 +104,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  .eachImage {
+  .eachImageContainer {
     height: 230px;
     width: 200px;
   }
@@ -114,7 +120,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .eachImage {
+  .eachImageContainer {
     height: 200px;
     width: 160px;
   }
@@ -130,7 +136,7 @@
 }
 
 @media screen and (max-width: 400px) {
-  .eachImage {
+  .eachImageContainer {
     height: 190px;
     width: 150px;
   }
