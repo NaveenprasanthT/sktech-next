@@ -62,6 +62,20 @@ function ProductAndService() {
             </div>
           ))}
         </div>
+        <div className={styles.buttonWrapMobile}>
+          <button
+            onClick={() => router.push('/product/pos-system?id=1')}
+          >
+            <span>View more</span>
+            <span><ArrowIcon /></span>
+          </button>
+          <button
+            onClick={() => router.push('/contactus')}
+          >
+            <span>Get in Touch</span>
+            <span><ArrowIcon /></span>
+          </button>
+        </div>
       </div>
     </div>
   );

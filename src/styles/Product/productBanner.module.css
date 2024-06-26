@@ -18,7 +18,7 @@
 
   font-size: 24px;
   font-weight: 600;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
 
   color: var(--black-color-3);
   background-color: var(--title-color);
@@ -35,21 +35,21 @@
   color: var(--gray-color);
   font-weight: 600;
   text-decoration: underline;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
 }
 
 .productBannerContent h1 {
   width: 90%;
   font-size: 42px;
   font-weight: 500;
-  letter-spacing: -2px;
+  /* letter-spacing: -2px; */
 }
 
 .productBannerContent p {
   font-size: 20px;
   font-weight: 500;
   line-height: 23.5px;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
   /* text-align: justify; */
   color: var(--gray-color-2);
 }
@@ -178,7 +178,7 @@
     line-height: 16.5px;
   }
 
-  .productBannerImage {
-    height: 300px;
+  .productBannerImageMobile {
+    height: 200px;
   }
 }
