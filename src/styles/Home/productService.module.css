@@ -39,13 +39,15 @@
   opacity: 0.4;
 }
 
-.buttonWrap {
+.buttonWrap,
+.buttonWrapMobile {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-.buttonWrap button {
+.buttonWrap button,
+.buttonWrapMobile button {
   width: max-content;
   padding: 12px 30px;
 
@@ -60,12 +62,14 @@
   cursor: pointer;
 }
 
-.buttonWrap button span {
+.buttonWrap button span,
+.buttonWrapMobile button span {
   font-size: 16.44px;
   color: var(--primary-color);
 }
 
-.buttonWrap button span:last-child {
+.buttonWrap button span:last-child,
+.buttonWrapMobile button span:last-child {
   display: flex;
 }
 
@@ -145,19 +149,30 @@
 
 @media screen and (max-width: 500px) {
   .buttonWrap {
+    display: none;
+  }
+
+  .buttonWrapMobile {
+    justify-content: flex-start;
     gap: 15px;
   }
 
-  .buttonWrap button {
+  .buttonWrapMobile button {
     padding: 5px 17px;
     gap: 7px;
   }
 
-  .buttonWrap button span {
+  .buttonWrapMobile button span {
     font-size: 13.44px;
   }
 
-  .buttonWrap button svg {
+  .buttonWrapMobile button svg {
     width: 16px;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .buttonWrapMobile {
+    display: none;
   }
 }
