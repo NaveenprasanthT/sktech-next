@@ -27,7 +27,7 @@ export default function Home() {
         <AboutUs />
         <ProductAndService />
         <OurClients />
-        {/* <Media /> */}
+        <Media />
         <Enquiry />
         <Footer />
       </div>

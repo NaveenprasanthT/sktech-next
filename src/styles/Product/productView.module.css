@@ -8,14 +8,17 @@
 }
 
 .buttonWrap {
-  width: 100%;
+  width: 90vw;
 
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 23px;
+  overflow-x: scroll;
 }
 
 .buttonWrap button {
+  white-space: nowrap;
   font-size: 22px;
   font-weight: 500;
 
@@ -243,8 +246,10 @@
   }
 
   .buttonWrap {
+    padding: 0 0 15px;
+    justify-content: flex-start;
     gap: 15px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .buttonWrap button {
@@ -252,6 +257,7 @@
     font-weight: 500;
 
     padding: 14px 25px;
+    border-radius: 30px;
   }
 
   .productContentWrap {
@@ -314,6 +320,10 @@
 
   .featureImagesWrap {
     gap: 20px;
+  }
+
+  .featuresWrapLaptop {
+    display: none;
   }
 }
 
@@ -384,5 +394,10 @@
     font-weight: 600;
     padding: 8px 32px;
   }
+}
 
+@media screen and (min-width: 801px) {
+  .featuresWrapMobile {
+    display: none;
+  }
 }

@@ -2,19 +2,39 @@ import React from 'react';
 import styles from '@/styles/Home/ourClients.module.css';
 import Image from 'next/image';
 import SectionHeader from '../Shared/SectionHeader';
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function OurClients() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    className: styles.homeBannerContainer,
+    centerMode: false,
+    prevArrow: null,
+    nextArrow: null,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 800, // screens larger than 1024px
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+    ]
+  };
   const sliderImages = [
-    "/assets/Home/scroll01.png",
-    "/assets/Home/scroll02.png",
-    "/assets/Home/scroll03.png",
-    "/assets/Home/scroll04.png",
-    "/assets/Home/scroll05.png",
-    "/assets/Home/scroll01.png",
-    "/assets/Home/scroll02.png",
-    "/assets/Home/scroll03.png",
-    "/assets/Home/scroll04.png",
-    "/assets/Home/scroll05.png",
+    "/assets/Home/logo1.jfif",
+    "/assets/Home/logo2.png",
+    "/assets/Home/logo3.jfif",
+    "/assets/Home/logo4.jfif",
+    "/assets/Home/logo5.png",
   ];
 
   return (
@@ -25,7 +45,7 @@ function OurClients() {
       />
       <div className={styles.ourClientsContainer}>
         <div className={styles.ourClientsTop} />
-        <div className={styles.ourClientsImages}>
+        <Slider {...settings} className={styles.ourClientsImages}>
           {sliderImages.map((each) => (
             <div className={styles.eachImageContainer}>
               <Image
@@ -37,7 +57,7 @@ function OurClients() {
               />
             </div>
           ))}
-        </div>
+        </Slider>
         <div className={styles.ourClientsBottom} />
       </div>
     </div>

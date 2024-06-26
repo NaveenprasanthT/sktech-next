@@ -55,13 +55,15 @@ function ProductView(props) {
             <h1>{activeProduct?.title}</h1>
             <p>{activeProduct?.description}</p>
           </div>
-          <div className={styles.featuresWrap}>
-            <h2>Features:</h2>
-            <ul className={styles.featuresContainer}>
-              {activeProduct?.features?.map((feature) => (
-                <li>{feature}</li>
-              ))}
-            </ul>
+          <div className={styles.featuresWrapLaptop}>
+            <div className={styles.featuresWrap}>
+              <h2>Features:</h2>
+              <ul className={styles.featuresContainer}>
+                {activeProduct?.features?.map((feature) => (
+                  <li>{feature}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
         <div className={styles.featureImagesWrap}>
@@ -89,6 +91,16 @@ function ProductView(props) {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+      <div className={styles.featuresWrapMobile}>
+        <div className={styles.featuresWrap}>
+          <h2>Features:</h2>
+          <ul className={styles.featuresContainer}>
+            {activeProduct?.features?.map((feature) => (
+              <li>{feature}</li>
+            ))}
+          </ul>
         </div>
       </div>
       <div className={styles.brochureWrap}>
