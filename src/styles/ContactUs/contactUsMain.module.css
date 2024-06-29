@@ -189,6 +189,8 @@
 
   .enquiryFormContainer button {
     margin-top: 20px;
-    font-size: 18px;
+    padding: 8px 0;
+    font-size: 16px;
+    border-radius: 5px;
   }
 }

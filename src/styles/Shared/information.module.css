@@ -129,6 +129,10 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .ppWrapper {
+        padding: 6% 10%;
+    }
+
     .ppTitle {
         font-size: 14px;
         margin: 20px 0;

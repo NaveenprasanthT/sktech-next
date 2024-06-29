@@ -188,6 +188,7 @@
   }
 
   .faqRight p {
+    text-align: left;
     font-size: 13px;
   }
 }

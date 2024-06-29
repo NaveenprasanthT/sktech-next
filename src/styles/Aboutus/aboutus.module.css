@@ -307,7 +307,7 @@
     }
 
     .abtUsImg {
-        height: 300px;
+        height: 250px;
         width: 85%;
         margin: 25px 0;
     }
@@ -321,6 +321,11 @@
 
     .abtUsDetailTitle {
         margin: 0;
+        text-align: center;
+    }
+
+    .abtUsDetailDesc {
+        text-align: center;
     }
 
     .abtUsDetailContainer {
