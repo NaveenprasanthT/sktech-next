@@ -184,7 +184,7 @@ function Navbar() {
               </Popper>
             </div>
             <Link href="/aboutus" style={{ textDecoration: "none" }}><li>About us</li></Link>
-            <li>Support</li>
+            <Link href="/support" style={{ textDecoration: "none" }}><li>Support</li></Link>
             <Link href="/contactus" style={{ textDecoration: "none" }}><li><span>Contact us</span> <span><MessageIcon /></span> </li></Link>
           </ul>
           <div className={styles.toggleWrap}>

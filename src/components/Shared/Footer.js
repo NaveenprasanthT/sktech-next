@@ -27,7 +27,7 @@ function Footer() {
             <Link href="/" style={{ textDecoration: "none" }}><li>Home</li></Link>
             <Link href="/aboutus" style={{ textDecoration: "none" }}><li>About us</li></Link>
             <Link href="/product/pos-system?id=1" style={{ textDecoration: "none" }}><li>Products & Services</li></Link>
-            <li>Support</li>
+            <Link href="/support" style={{ textDecoration: "none" }}><li>Support</li></Link>
             <Link href="/contactus" style={{ textDecoration: "none" }}><li>Contact us</li></Link>
           </ul>
           <div className={styles.newsLetterWrap}>
