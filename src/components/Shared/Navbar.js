@@ -113,13 +113,13 @@ function Navbar() {
     <div className={styles.navbar}>
       <div className={styles.navbarWrap}>
         <div className={styles.navbarLeft}>
-          <Image
+          <Link href="/" style={{ textDecoration: "none" }}><Image
             src='/assets/Shared/logo.png'
             alt='logo'
             className={styles.logoImage}
             width={1000}
             height={1000}
-          />
+          /></Link>
         </div>
         <div className={styles.navbarRight}>
           <ul>

@@ -12,13 +12,13 @@ function Footer() {
       <div className={styles.footerTop}>
         <div className={styles.footerTopLeft}>
           <div className={styles.logoContainer}>
-            <Image
+          <Link href="/" style={{ textDecoration: "none" }}><Image
               src="/assets/Shared/logo.png"
               alt="logo"
               width={1000}
               height={1000}
               className={styles.footerLogo}
-            />
+            /></Link>
           </div>
           <span>Want to keep up with the latest updates?</span>
         </div>
@@ -47,41 +47,45 @@ function Footer() {
               </div>
             </div>
             <div className={styles.mediaTags}>
+              <Link href="https://www.facebook.com/sktechnosys" target="_blank" style={{ textDecoration: "none" }}>
               <Image
                 src="/assets/Footer/facebook.png"
                 alt="icon"
                 width={200}
                 height={200}
                 className={styles.mediaLogo}
-              />
+              /></Link>
+              <Link href="https://www.instagram.com/sktechnosys/" target="_blank" style={{ textDecoration: "none" }}>
               <Image
                 src="/assets/Footer/instagram.png"
                 alt="icon"
                 width={200}
                 height={200}
                 className={styles.mediaLogo}
-              />
+              /></Link>
+              {/* <Link href="" target="_blank">
               <Image
                 src="/assets/Footer/twitter.png"
                 alt="icon"
                 width={200}
                 height={200}
                 className={styles.mediaLogo}
-              />
-              <Image
+              /></Link> */}
+              <Link href="https://www.linkedin.com/company/sk-technosys/" target="_blank" style={{ textDecoration: "none" }}><Image
                 src="/assets/Footer/linkedin.png"
                 alt="icon"
                 width={200}
                 height={200}
                 className={styles.mediaLogo}
-              />
+              /></Link>
+              <Link href="https://www.youtube.com/@sktechnosys" target="_blank" style={{ textDecoration: "none" }}>
               <Image
                 src="/assets/Footer/youtube.png"
                 alt="icon"
                 width={200}
                 height={200}
                 className={styles.mediaLogo}
-              />
+              /></Link>
             </div>
           </div>
         </div>

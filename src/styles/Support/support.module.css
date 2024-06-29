@@ -19,6 +19,7 @@
     height: 300px;
     position: relative;
     object-fit: cover;
+    border-radius: 12px;
 }
 
 .SdownloadCon{
@@ -100,4 +101,11 @@
     border-radius: 7px;
     font-size: 17px;
     line-height: 27.14px;
+}
+
+@media screen and (max-width: 1700px) {
+    .SdownloadCon {
+      bottom: 2%;
+      width: 75%;
+    }
 }
