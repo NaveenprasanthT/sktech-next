@@ -78,7 +78,7 @@ const policy = () => {
     ];
   return (
     <>
-    <Information data={policyContent} header={"Privacy policy"}/>
+    <Information data={policyContent} header={"Privacy policy"} />
     </>
   )
 }
