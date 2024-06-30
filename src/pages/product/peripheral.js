@@ -52,10 +52,10 @@ const peripheral = () => {
           'Size - 450 x 470 x 146mm',
         ],
         productImages: [
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
+          '/assets/Product/peripheral/cashdrawer01.png',
+          '/assets/Product/peripheral/cashdrawer02.png',
+          '/assets/Product/peripheral/cashdrawer03.png',
+          '/assets/Product/peripheral/cashdrawer04.png',
         ],
       },
       {
@@ -67,10 +67,10 @@ const peripheral = () => {
           "System Mounted"
         ],
         productImages: [
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
+          '/assets/Product/peripheral/monitor01.png',
+          '/assets/Product/peripheral/monitor02.png',
+          '/assets/Product/peripheral/monitor03.png',
+          '/assets/Product/peripheral/monitor04.png',
         ],
       },
       {
@@ -81,10 +81,10 @@ const peripheral = () => {
           '3 track magnetic stripe reader',
         ],
         productImages: [
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
+          '/assets/Product/peripheral/msr01.png',
+          '/assets/Product/peripheral/msr02.png',
+          '/assets/Product/peripheral/msr03.png',
+          '/assets/Product/peripheral/msr04.png',
         ],
       },
       {
@@ -97,10 +97,10 @@ const peripheral = () => {
           'Pole display'
         ],
         productImages: [
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
+          '/assets/Product/peripheral/vfd01.png',
+          '/assets/Product/peripheral/vfd02.png',
+          '/assets/Product/peripheral/vfd03.png',
+          '/assets/Product/peripheral/vfd04.png',
         ],
       },
     ],

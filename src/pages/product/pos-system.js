@@ -104,10 +104,10 @@ function POSSystem() {
           'Designed for Easy Installation and Service',
         ],
         productImages: [
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
+          '/assets/Product/pos/android01.png',
+          '/assets/Product/pos/android02.png',
+          '/assets/Product/pos/android03.png',
+          '/assets/Product/pos/android04.png',
         ],
       },
       {
@@ -127,10 +127,10 @@ function POSSystem() {
           'Designed for Easy Installation and Service'
         ],
         productImages: [
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
-          '/assets/Home/aboutUs.png',
-          '/assets/Home/productService.png',
+          '/assets/Product/pos/compact01.png',
+          '/assets/Product/pos/compact02.png',
+          '/assets/Product/pos/compact03.png',
+          '/assets/Product/pos/compact04.png',
         ],
       },
     ],
@@ -149,8 +149,8 @@ function POSSystem() {
       'Healthcare',
     ],
     faqImages: [
-      '/assets/Product/pos/posBottom01.jpeg',
       '/assets/Product/pos/posBottom02.jpeg',
+      '/assets/Product/pos/posBottom01.jpeg',
     ],
     description: "When it comes to building a business, there's no one route to success. As you scale and strive for profitability, having the right tools and resources to guide you as you navigate the operational ins and outs can make all of the difference. From setting up your back office to pivoting and scaling, discover the tools you need to operate your business today and grow into the future.",
   };
