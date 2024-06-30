@@ -1,110 +1,129 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
+import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import YouTube from 'react-youtube';
+import getYouTubeID from 'get-youtube-id';
 
-// Import Swiper styles
-import "swiper/css";
-
-SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
+import styles from '@/styles/Home/media.module.css';
+import SectionHeader from '../Shared/SectionHeader';
+import { MediaLeftArrow, MediaRightArrow } from '../Shared/SvgIcon';
 
 export default function SwiperCoverflow() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleUpdateMargin = (sliderIndex) => {
+    let finalMargin = 0;
+    if ((activeIndex - 1 === sliderIndex) || (activeIndex + 1 === sliderIndex)) {
+      finalMargin = 50;
+    } else if ((activeIndex - 2 === sliderIndex) || (activeIndex + 2 === sliderIndex)) {
+      finalMargin = 100;
+    } else if ((activeIndex - 3 === sliderIndex) || (activeIndex + 3 === sliderIndex)) {
+      finalMargin = 150;
+    } else if ((activeIndex - 4 === sliderIndex) || (activeIndex + 4 === sliderIndex)) {
+      finalMargin = 200;
+    }
+    return finalMargin;
+  };
+
+  const opts = {
+    height: '100%',
+    width: '100%',
+    playerVars: {
+      autoplay: 1,
+    },
+  };
+
   return (
-    <div className="App">
+    <div className={styles.mediaContainerWrap}>
+      <SectionHeader
+        title="Media"
+      />
       <Swiper
-        navigation
-        pagination={{ clickable: true }}
-        effect="coverflow"
+        initialSlide={1}
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
         coverflowEffect={{
-          rotate: 50,
+          rotate: 0,
           stretch: 0,
-          depth: 100,
+          depth: 300,
           modifier: 1,
-          slideShadows: false
+          slideShadows: true,
         }}
-        slidesPerView={2}
-        centeredSlides
-        style={{ height: "500px" }}
+        navigation={{
+          prevEl: '#swiper-button-prev',
+          nextEl: '#swiper-button-next',
+        }}
+        pagination={false}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="mySwiper"
+        onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+        onSwiper={(swiper) => {
+          // Make sure to initialize navigation after swiper instance is available
+          swiper.navigation.init();
+          swiper.navigation.update();
+        }}
       >
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-1.jpg)"
-          }}
-        >
-          Slide 1
+        <SwiperSlide>
+          <div
+            className={styles.sliderImage}
+            style={{ marginTop: `${handleUpdateMargin(0)}px` }}
+          >
+            <YouTube
+              videoId={getYouTubeID("https://youtu.be/z9ks2WERiF0?feature=shared")}
+              opts={opts}
+              className="youtube-video"
+              onReady={(e) => e.target.pauseVideo()}
+              style={{ height: '100%', width: '100%' }}
+            />
+          </div>
         </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-2.jpg)"
-          }}
-        >
-          Slide 2
+        <SwiperSlide>
+          <div
+            className={styles.sliderImage}
+            style={{ marginTop: `${handleUpdateMargin(1)}px` }}
+          >
+            <YouTube
+              videoId={getYouTubeID("https://youtu.be/j5e_sI_53Jg?feature=shared")}
+              opts={opts}
+              className="youtube-video"
+              onReady={(e) => e.target.pauseVideo()}
+              style={{ height: '100%', width: '100%' }}
+            />
+          </div>
         </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-3.jpg)"
-          }}
-        >
-          Slide 3
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-4.jpg)"
-          }}
-        >
-          Slide 4
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-5.jpg)"
-          }}
-        >
-          Slide 5
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-6.jpg)"
-          }}
-        >
-          Slide 6
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-7.jpg)"
-          }}
-        >
-          Slide 7
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-8.jpg)"
-          }}
-        >
-          Slide 8
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-9.jpg)"
-          }}
-        >
-          Slide 9
-        </SwiperSlide>
-        <SwiperSlide
-          style={{
-            backgroundImage:
-              "url(https://swiperjs.com/demos/images/nature-10.jpg)"
-          }}
-        >
-          Slide 10
+        <SwiperSlide>
+          <div
+            className={styles.sliderImage}
+            style={{ marginTop: `${handleUpdateMargin(2)}px` }}
+          >
+            <YouTube
+              videoId={getYouTubeID("https://youtu.be/BTKju09b5EI?feature=shared")}
+              opts={opts}
+              className="youtube-video"
+              onReady={(e) => e.target.pauseVideo()}
+              style={{ height: '100%', width: '100%' }}
+            />
+          </div>
         </SwiperSlide>
       </Swiper>
+      <div
+        className={styles.swiperButtonPrev}
+        id="swiper-button-prev"
+      >
+        <MediaLeftArrow />
+      </div>
+      <div
+        className={styles.swiperButtonNext}
+        id="swiper-button-next"
+      >
+        <MediaRightArrow />
+      </div>
     </div>
   );
 }

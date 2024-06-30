@@ -1,66 +1,29 @@
-.mediaWrap {
-  padding: 1% 4% 3%;
-
-  display: flex;
-  flex-direction: column;
-  gap: 5vh;
+.mediaContainerWrap {
+  padding: 0 3%;
+  position: relative;
+  height: 450px;
 }
 
-.ArrowContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 34px;
-  color: var(--secondary-color);
+.sliderImage {
+  width: 350px;
+  height: 200px;
+  border-radius: 15px;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
 }
 
-.ArrowContainer span {
+.swiperButtonPrev,
+.swiperButtonNext {
+  position: absolute;
+  bottom: 5%;
+  z-index: 999;
   cursor: pointer;
 }
 
-.mediaContainer {
-  height: 1000px;
-  margin: 0% 15%;
+.swiperButtonPrev {
+  left: 46%;
 }
 
-.ReviewContainer {
-  display: flex;
-}
-
-.reviewImageWrap {
-  width: 100%;
-  height: 150px;
-  transition: all 0.5s ease-in-out;
-}
-
-.reviewImage {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.reviewImageLeft {
-  width: 90%;
-  height: 90%;
-  border-radius: 10px;
-}
-
-.CenterMobile {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5%;
-  border-radius: 20px;
-  /* border: 2px solid white; */
-}
-
-.reviewImagePhone {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+.swiperButtonNext {
+  left: 55%;
 }

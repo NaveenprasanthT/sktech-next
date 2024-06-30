@@ -114,7 +114,7 @@ function Navbar() {
       <div className={styles.navbarWrap}>
         <div className={styles.navbarLeft}>
           <Link href="/" style={{ textDecoration: "none" }}><Image
-            src='/assets/Shared/logo.png'
+            src='/assets/logo.png'
             alt='logo'
             className={styles.logoImage}
             width={1000}
