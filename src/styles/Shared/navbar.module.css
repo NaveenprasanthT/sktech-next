@@ -22,7 +22,7 @@
 
 .logoImage {
   width: auto;
-  height: 65px;
+  height: 55px;
   object-fit: contain;
   cursor: pointer;
 }
@@ -208,7 +208,7 @@
 
 @media screen and (max-width: 1700px) {
   .logoImage {
-    height: 47px;
+    height: 40px;
   }
 
   .navbarRight ul li {
@@ -230,7 +230,7 @@
 
 @media screen and (max-width: 1300px) {
   .logoImage {
-    height: 43px;
+    height: 35px;
   }
 
   .navbarWrap {
@@ -288,7 +288,7 @@
 
   .logoImage {
     width: auto;
-    height: 35px;
+    height: 30px;
   }
 
   .emptyDiv {
@@ -303,6 +303,6 @@
 
   .logoImage {
     width: auto;
-    height: 25px;
+    height: 20  px;
   }
 }
