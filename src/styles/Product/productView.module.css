@@ -17,6 +17,10 @@
   overflow-x: scroll;
 }
 
+.buttonWrap::-webkit-scrollbar {
+  display: none;
+}
+
 .buttonWrap button {
   white-space: nowrap;
   font-size: 22px;
