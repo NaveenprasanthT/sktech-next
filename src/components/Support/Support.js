@@ -13,7 +13,7 @@ const Support = () => {
   return (
     <div className={Styles.Scontainer}>
       <div className={Styles.SImgwrapper}>
-        <Image src="/assets/Support/supportimg.png" width={1000} height={1000} className={Styles.Supportimage} />
+        <Image src="/assets/Support/supportImg.png" width={1000} height={1000} className={Styles.Supportimage} />
       </div>
       <div className={Styles.SdownloadCon}>
         <div className={Styles.SItemsContainer}>

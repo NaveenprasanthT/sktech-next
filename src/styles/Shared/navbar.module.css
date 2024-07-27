@@ -1,12 +1,13 @@
 .navbar {
   position: relative;
+  z-index: 999;
 }
 
 .navbarWrap {
   position: fixed;
   z-index: 99;
   width: 100vw;
-  height: 100px;
+  height: 75px;
   padding: 0px 45px;
 
   display: grid;
@@ -65,7 +66,7 @@
 }
 
 .emptyDiv {
-  height: 100px;
+  height: 75px;
 }
 
 .navbarProductWrap {
@@ -125,6 +126,57 @@
   padding: 7px 12px 5px 12px;
 
   height: 35px;
+}
+
+.navbarProductWrapDesktop {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 4vw 7vw;
+
+  padding: 3% 5%;
+  background-color: var(--black-color-3);
+
+  min-height: 40vh;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.navbarProductWrapDesktop::-webkit-scrollbar {
+  display: none;
+}
+
+.subMenuContainerDesktop {}
+
+.subMenuContainerDesktop a {
+  text-decoration: none;
+}
+
+.subMenuContainerDesktop p {
+  font-size: 18px;
+  padding: 7px 0px 5px;
+
+  height: 35px;
+}
+
+
+.menuContainerDesktop {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menuHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.menuHeader h3 {
+  font-size: 20px;
+  color: var(--title-color);
 }
 
 .mobileNavbarWrap {
@@ -206,6 +258,17 @@
   cursor: pointer;
 }
 
+
+/* New Menubar */
+.subMenu {
+  color: var(--primary-color);
+}
+
+.submenu a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media screen and (max-width: 1700px) {
   .logoImage {
     height: 40px;
@@ -216,11 +279,15 @@
   }
 
   .menuHeader h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .subMenuContainer p {
     font-size: 14px;
+  }
+
+  .subMenuContainerDesktop p {
+    font-size: 16px;
   }
 
   .navbarRight ul li span:last-child {
@@ -243,10 +310,14 @@
   }
 
   .menuHeader h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .subMenuContainer p {
+    font-size: 15px;
+  }
+
+  .subMenuContainerDesktop p {
     font-size: 13px;
   }
 
@@ -303,6 +374,6 @@
 
   .logoImage {
     width: auto;
-    height: 20  px;
+    height: 20 px;
   }
 }

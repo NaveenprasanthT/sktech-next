@@ -19,6 +19,7 @@ function ProductBanner(props) {
         width={1000}
         height={1000}
         className={styles.productBannerImageMobile}
+        style={{ objectPosition: bannerContent?.imagePosition }}
       />
         {bannerContent?.buttonLabel
           && (
@@ -34,6 +35,7 @@ function ProductBanner(props) {
         width={1000}
         height={1000}
         className={styles.productBannerImage}
+        style={{ objectPosition: bannerContent?.imagePosition }}
       />
     </div>
   );

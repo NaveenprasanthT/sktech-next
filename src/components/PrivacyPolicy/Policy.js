@@ -6,7 +6,7 @@ const policy = () => {
     const policyContent = [
       {
         content:
-          'This Privacy Policy describes how SK Technosys ("we," "us," or "our") collects, uses, and discloses your personal information when you use our website (sktechnosys.in) or purchase our products from our authorized retailers.Information We Collect We collect several types of information for various purposes to improve our services to you.',
+          'This Privacy Policy describes how S K Technosys ("we," "us," or "our") collects, uses, and discloses your personal information when you use our website (sktechnosys.in) or purchase our products from our authorized retailers.Information We Collect We collect several types of information for various purposes to improve our services to you.',
         list: true,
         listContent: [
           "Personal Information: We may collect personal information, such as your name, contact information (including email address and phone number), and billing details, when you purchase our products from our authorized retailers.",

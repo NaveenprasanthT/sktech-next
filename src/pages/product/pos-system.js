@@ -15,9 +15,9 @@ function POSSystem() {
   };
 
   const bannerContent = {
-    imagePath: '/assets/Product/pos/posBanner.jpeg',
+    imagePath: '/assets/Product/pos/skPosBanner.jpg',
     smallTitle: 'POS systems',
-    title: 'Power your business with flexible POS software.',
+    title: 'Power your business with flexible POS system.',
     description: 'A point of sale, or point of purchase, is where you ring up customers and accept payments. When customers check out online, walk up to your checkout counter, or pick out an item from your stand or booth, they’re at the point of sale. You can even do this on existing hardware you already use for your business—your computer.',
     buttonLabel: 'Send Enquiry',
     buttonClick: handleBannerButtonClick,
@@ -45,7 +45,7 @@ function POSSystem() {
     productDetails: [
       {
         id: 1,
-        title: 'SK-POS Mighty Series (M6412)',
+        title: <>SK-POS Mighty Series (M<span className="poppins-font">6412</span>)</>,
         description: 'Powerful PCAP Touch POS System with Latest Generation J6412 Elkhart Lake Quadcore Processor and 8GB RAM with NVMe SSD for hasselfree operations in Retail and Hospitality Industry',
         features: [
           'Compact and Roboust Design for Durability',
@@ -67,7 +67,7 @@ function POSSystem() {
       },
       {
         id: 2,
-        title: 'SK-POS Extreme Series (E1115, E1135)',
+        title: <>SK-POS Extreme Series <span className="poppins-font">(E1115, E1135)</span></>,
         description: 'Powerful PCAP Touch POS System With Latest Generation Core i3/ Core i5 Processor and 8GB Ram with NVMe SSD For Hasslefree Operations in Retail and Hospitality Industry.',
         features: [
           'Compact and Roboust Design for Durability',
@@ -89,7 +89,7 @@ function POSSystem() {
       },
       {
         id: 3,
-        title: 'SK-POS Andriod Series (A1564)',
+        title: <>SK-POS Andriod Series <span className="poppins-font">(A1564)</span></>,
         description: 'Powerful Android PCAP Touch POS System With Latest Generation RK3566 Processor and 4GB Ram with 32GB EMCC For Hasslefree Operations in Retail and Hospitality Industry.',
         features: [
           'Compact and Roboust Design for Durability',
@@ -112,7 +112,7 @@ function POSSystem() {
       },
       {
         id: 4,
-        title: 'SK-POS Andriod Series (A1564)',
+        title: <>SK-POS Andriod Series <span className="poppins-font">(A1564)</span></>,
         description: 'Powerful & Compact all in one Touch POS System With Latest Generation Windows/ Android Processor with built - in High speed thermal Printer with optional Peripherals For Hasslefree Operations in Retail and Hospitality Industry.',
         features: [
           'Compact and Roboust Design for Durability',
@@ -149,8 +149,8 @@ function POSSystem() {
       'Healthcare',
     ],
     faqImages: [
-      '/assets/Product/pos/posBottom02.jpeg',
-      '/assets/Product/pos/posBottom01.jpeg',
+      '/assets/Product/pos/posBottom02.jpg',
+      '/assets/Product/pos/posBottom01.jpg',
     ],
     description: "When it comes to building a business, there's no one route to success. As you scale and strive for profitability, having the right tools and resources to guide you as you navigate the operational ins and outs can make all of the difference. From setting up your back office to pivoting and scaling, discover the tools you need to operate your business today and grow into the future.",
   };

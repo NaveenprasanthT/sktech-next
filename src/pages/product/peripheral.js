@@ -14,6 +14,7 @@ const peripheral = () => {
 
   const bannerContent = {
     imagePath: '/assets/Home/aboutUs.png',
+    imagePosition: 'top',
     smallTitle: 'Peripherals',
     title: 'SK-POS Heavy Duty Cash Drawer',
     description: 'A peripheral is an external device or component connected to a computer or other system, expanding its functionality. Examples include printers, keyboards, mice, and external storage devices.',
@@ -29,15 +30,15 @@ const peripheral = () => {
       },
       {
         id: 2,
-        label: 'MONITORS',
+        label: 'Monitors',
       },
       {
         id: 3,
-        label: 'MAGNETIC STRIPE READERS (MSR)',
+        label: 'Magnetic Stripe Readers (MSR)',
       },
       {
         id: 4,
-        label: 'VFD & POLE DISPLAY',
+        label: 'VFD & Pole Display',
       },
     ],
     productDetails: [
@@ -60,7 +61,7 @@ const peripheral = () => {
       },
       {
         id: 2,
-        title: '2ND MONITORS.',
+        title: <><span className="poppins-font">2</span>nd Monitors.</>,
         description: 'Rear View LCD MOnitor at customer side to speed up the customer rotation  and to run the promotions activity .',
         features: [
           "10.1’’  / 11.6 ‘’  True flat LCD monitor tilting angles",
@@ -75,32 +76,26 @@ const peripheral = () => {
       },
       {
         id: 3,
-        title: ' MAGNETIC STRIPE READERS (MSR)',
+        title: 'Magnetic Stripe Readers (MSR)',
         description: 'To Read magnetic stripe loyalty and login cards.',
         features: [
           '3 track magnetic stripe reader',
         ],
         productImages: [
-          '/assets/Product/peripheral/msr01.png',
-          '/assets/Product/peripheral/msr02.png',
-          '/assets/Product/peripheral/msr03.png',
-          '/assets/Product/peripheral/msr04.png',
+          '/assets/Product/peripheral/monitor01.jpg',
         ],
       },
       {
         id: 4,
-        title: 'VFD & POLE DISPLAY.',
-        description: 'VFD DIsplay at customer side to show the billing details ',
+        title: 'VFD & Pole Display.',
+        description: 'VFD Display at customer side to show the billing details ',
         features: [
           '20 x 2 line VFD Display',
           'Systme mounted',
           'Pole display'
         ],
         productImages: [
-          '/assets/Product/peripheral/vfd01.png',
-          '/assets/Product/peripheral/vfd02.png',
-          '/assets/Product/peripheral/vfd03.png',
-          '/assets/Product/peripheral/vfd04.png',
+          '/assets/Product/peripheral/monitor02.jpg',
         ],
       },
     ],

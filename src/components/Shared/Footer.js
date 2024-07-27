@@ -63,14 +63,6 @@ function Footer() {
                   height={200}
                   className={styles.mediaLogo}
                 /></Link>
-              {/* <Link href="" target="_blank">
-              <Image
-                src="/assets/Footer/twitter.png"
-                alt="icon"
-                width={200}
-                height={200}
-                className={styles.mediaLogo}
-              /></Link> */}
               <Link href="https://www.linkedin.com/company/sk-technosys/" target="_blank" style={{ textDecoration: "none" }}><Image
                 src="/assets/Footer/linkedin.png"
                 alt="icon"
@@ -86,6 +78,22 @@ function Footer() {
                   height={200}
                   className={styles.mediaLogo}
                 /></Link>
+              <Link href="https://g.page/r/CfZlVE1BAXXKEBM/review" target="_blank">
+                <Image
+                  src="/assets/Footer/google.png"
+                  alt="icon"
+                  width={200}
+                  height={200}
+                  className={styles.mediaLogo}
+                /></Link>
+              <a href="https://api.whatsapp.com/send?phone=+918105625375" target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/assets/Footer/whatsapp.png"
+                  alt="icon"
+                  width={200}
+                  height={200}
+                  className={styles.mediaLogo}
+                /></a>
             </div>
           </div>
         </div>

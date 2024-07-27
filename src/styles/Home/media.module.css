@@ -16,7 +16,7 @@
 .swiperButtonNext {
   position: absolute;
   bottom: 5%;
-  z-index: 999;
+  z-index: 997;
   cursor: pointer;
 }
 
@@ -26,4 +26,35 @@
 
 .swiperButtonNext {
   left: 55%;
+}
+
+@media screen and (max-width:550px) {
+  .mediaContainerWrap {
+    padding: 0 3%;
+    position: relative;
+    height: 400px;
+  }
+
+  .sliderImage {
+    width: 290px;
+    height: 150px;
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+  }
+
+  .swiperButtonPrev,
+  .swiperButtonNext {
+    position: absolute;
+    bottom: 5%;
+    cursor: pointer;
+  }
+
+  .swiperButtonPrev {
+    left: 30%;
+  }
+
+  .swiperButtonNext {
+    left: 60%;
+  }
 }
