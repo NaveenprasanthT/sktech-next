@@ -32,9 +32,6 @@ export default function SwiperCoverflow() {
   const opts = {
     height: '100%',
     width: '100%',
-    playerVars: {
-      autoplay: 1,
-    },
   };
 
   return (
@@ -75,10 +72,10 @@ export default function SwiperCoverflow() {
             style={{ marginTop: `${handleUpdateMargin(0)}px` }}
           >
             <YouTube
-              videoId={getYouTubeID("https://youtu.be/z9ks2WERiF0?feature=shared")}
+              videoId={getYouTubeID("https://youtu.be/j5e_sI_53Jg?feature=shared")}
               opts={opts}
               className="youtube-video"
-              onReady={(e) => e.target.pauseVideo()}
+              // onReady={(e) => e.target.pauseVideo()}
               style={{ height: '100%', width: '100%' }}
             />
           </div>
@@ -89,7 +86,7 @@ export default function SwiperCoverflow() {
             style={{ marginTop: `${handleUpdateMargin(1)}px` }}
           >
             <YouTube
-              videoId={getYouTubeID("https://youtu.be/j5e_sI_53Jg?feature=shared")}
+              videoId={getYouTubeID("https://youtu.be/z9ks2WERiF0?feature=shared")}
               opts={opts}
               className="youtube-video"
               onReady={(e) => e.target.pauseVideo()}
@@ -104,6 +101,20 @@ export default function SwiperCoverflow() {
           >
             <YouTube
               videoId={getYouTubeID("https://youtu.be/BTKju09b5EI?feature=shared")}
+              opts={opts}
+              className="youtube-video"
+              onReady={(e) => e.target.pauseVideo()}
+              style={{ height: '100%', width: '100%' }}
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div
+            className={styles.sliderImage}
+            style={{ marginTop: `${handleUpdateMargin(3)}px` }}
+          >
+            <YouTube
+              videoId={getYouTubeID(" https://youtu.be/KARlle3W7DE?si=uf1AdjtfrfKG0eWl ")}
               opts={opts}
               className="youtube-video"
               onReady={(e) => e.target.pauseVideo()}

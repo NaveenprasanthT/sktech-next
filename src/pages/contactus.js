@@ -10,7 +10,7 @@ const ContactUsPage = () => {
       <Head>
         <title>S K Technosys || Contact Us</title>
         <meta name="title" content="Contact Us - S K Technosys" />
-        <meta name="description" content="Get in touch with SK Technosys!  Questions about SK-POS? We're here to help. Contact us at sktechnosys.in" />
+        <meta name="description" content="Get in touch with S K Technosys!  Questions about SK-POS? We're here to help. Contact us at sktechnosys.in" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         {/* Google Tag Manager */}

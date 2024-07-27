@@ -11,7 +11,7 @@ function OurClients() {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
@@ -19,7 +19,7 @@ function OurClients() {
     centerMode: false,
     prevArrow: null,
     nextArrow: null,
-    arrows: false,
+    arrows: true,
     responsive: [
       {
         breakpoint: 800, // screens larger than 1024px

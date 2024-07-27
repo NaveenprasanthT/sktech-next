@@ -32,13 +32,10 @@ function AboutUs() {
           className={styles.aboutUsImageMobile}
         />
         <p>
-          S K Technosys is an industry expertise in hospitality and retail segment in providing end to end IT solutions and more with best in class technology associates.
+          S K Technosys is a leading provider of end-to-end IT solutions for the hospitality and retail industries in India. Our team of highly-skilled IT professionals is dedicated to delivering innovative, ideal, reliable, and affordable IT solutions for small, medium, and large-scale enterprises.
         </p>
         <p>
-          We are dedicated to deliver innovative, ideal, reliable and affordable effective solutions for small, medium and large scale enterprises.
-        </p>
-        <p>
-          We provide a breadth of services from planning, supply and implementation of IT activities to our customers in a single window.
+          We offer a comprehensive range of IT services, from planning and supplying IT equipment to implementing and managing IT systems for our clients. We are a one-stop shop for all your IT needs, allowing you to focus on running your business.
         </p>
         <SharedButton
           label="Read More"

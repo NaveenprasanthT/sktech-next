@@ -4,7 +4,7 @@ import Information from '../Shared/information'
 const TermsConditions = () => {
     const TermsConditions = [
         {
-           content:'These Terms and Conditions ("Terms") govern the sale of our products ("Products") to you ("Customer") by SK Technosys ("we," "us," or "our"). Please read these Terms carefully before purchasing our Products. By purchasing our Products, you agree to be bound by these Terms.',
+           content:'These Terms and Conditions ("Terms") govern the sale of our products ("Products") to you ("Customer") by S K Technosys ("we," "us," or "our"). Please read these Terms carefully before purchasing our Products. By purchasing our Products, you agree to be bound by these Terms.',
            list:false,
         },
         {
@@ -44,7 +44,7 @@ const TermsConditions = () => {
         },
         {
             title:"Intellectual Property",
-            content:"The Products and all intellectual property rights associated therewith (including copyrights, trademarks, and patents) are the property of SK Technosys or its licensors. You are granted a non-exclusive, non-transferable license to use the Products for your personal use only. You may not modify, copy, distribute, sell, or create derivative works of the Products without our express written permission.",
+            content:"The Products and all intellectual property rights associated therewith (including copyrights, trademarks, and patents) are the property of S K Technosys or its licensors. You are granted a non-exclusive, non-transferable license to use the Products for your personal use only. You may not modify, copy, distribute, sell, or create derivative works of the Products without our express written permission.",
             list:false,
         },
         {

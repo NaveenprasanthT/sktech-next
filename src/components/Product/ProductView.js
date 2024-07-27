@@ -104,10 +104,12 @@ function ProductView(props) {
         </div>
       </div>
       <div className={styles.brochureWrap}>
-        <h1>Download our e-broucher</h1>
-        <button className={styles.brochureButton}>
-          Download
-        </button>
+        <div className={styles.brochureWrapContent}>
+          <h1>Download our e-broucher</h1>
+          <button className={styles.brochureButton}>
+            Download
+          </button>
+        </div>
         <Image
           src='/assets/Product/skyBg.png'
           alt='product'

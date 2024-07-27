@@ -30,7 +30,7 @@ function AboutUsMain() {
         <h1 className={Styles.abtUsHeader}>
           "Delivering Reliable IT Hardware Solutions for Your Business Needs"
         </h1>
-        <Image src="/assets/Home/aboutImg.png" alt="AboutUs" height={1000} width={1000} className={Styles.abtUsImg} />
+        <Image src="/assets/Home/aboutUs.png" alt="AboutUs" height={1000} width={1000} className={Styles.abtUsImg} />
         <h1 className={Styles.abtUsDesc}>
           "SKTechnosys is a leading provider of innovative IT hardware
           solutions, specializing in delivering top-notch products and expert
@@ -41,7 +41,7 @@ function AboutUsMain() {
         <div className={Styles.abtUsline}></div>
         <div className={Styles.abtUsDetailContainer}>
           <div className={Styles.abtUsDetailTitle}>
-            <h1>About SK TECHONOSYS</h1>
+            <h1>About S K TECHONOSYS</h1>
           </div>
           <div className={Styles.abtUsDetailDesc}>
             <p>
@@ -64,7 +64,7 @@ function AboutUsMain() {
             </p>
           </div>
         </div>
-        <div className={Styles.abtUsCountCon}>
+        {/* <div className={Styles.abtUsCountCon}>
           {numberCount.map((data) => (
             <div className={Styles.aboutEachCount}>
               <h1>
@@ -83,7 +83,7 @@ function AboutUsMain() {
               <h3>{data.title}</h3>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

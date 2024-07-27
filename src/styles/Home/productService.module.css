@@ -76,22 +76,13 @@
 .imageWrap {
   width: 100%;
   height: 380px;
-  overflow-y: scroll;
-}
-
-.imageWrap::-webkit-scrollbar {
-  display: none;
-}
-
-.sliderImageWrap {
-  width: inherit;
-  height: inherit;
 }
 
 .sliderImage {
   width: 100%;
-  height: 100%;
+  height: 380px;
   object-fit: cover;
+  object-position: top;
 }
 
 @media screen and (max-width: 1700px) {
@@ -115,6 +106,11 @@
   .imageWrap {
     height: 340px;
   }
+
+  .sliderImage {
+    width: 100%;
+    height: 340px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -124,6 +120,11 @@
   }
 
   .imageWrap {
+    height: 40vh;
+  }
+
+  .sliderImage {
+    width: 100%;
     height: 40vh;
   }
 

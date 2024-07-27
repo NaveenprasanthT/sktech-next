@@ -1,21 +1,90 @@
 .homeBannerWrap {}
 
-.homeBannerContainer {}
-
-.homeBannerImageWrap {
+.homeBannerContainer {
+  position: relative;
   width: 100vw !important;
-  height: calc(95vh - 100px) !important;
+  height: calc(100vh - 75px) !important;
+}
+
+.homeBannerWrap {
+  position: relative;
+  width: 100vw !important;
+  height: calc(100vh - 75px) !important;
 }
 
 .homeBannerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   width: 100%;
-  height: calc(95vh - 100px) !important;
+  height: calc(100vh - 75px) !important;
   object-fit: cover;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: calc(100vh - 75px) !important;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contentWrap {
+  position: relative;
+  z-index: 3;
+
+  padding: 10% 5%;
+}
+
+.contentWrap h1 {
+  width: 50%;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.contentWrap button {
+  margin: 4% 0;
+  padding: 12px 30px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.contentWrap button:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+@media screen and (max-width: 1300px) {
+  .contentWrap h1 {
+    width: 60%;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .contentWrap button {
+    margin: 4% 0;
+    padding: 12px 30px;
+
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 30px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
+
+  .homeBannerWrap,
   .homeBannerContainer {
-    height: 70vh;
+    height: 70vh !important;
   }
 
   .homeBannerImage {
@@ -23,16 +92,65 @@
     height: 70vh !important;
     object-fit: cover;
   }
+
+  .overlay {
+    height: 70vh !important;
+  }
+
+  .contentWrap h1 {
+    width: 70%;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .contentWrap button {
+    margin: 4% 0;
+    padding: 12px 30px;
+
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+  }
 }
 
 @media screen and (max-width: 800px) {
+
+  .homeBannerWrap,
   .homeBannerContainer {
-    height: 50vh;
+    height: 50vh !important;
   }
 
   .homeBannerImage {
     width: 100%;
     height: 50vh !important;
     object-fit: cover;
+  }
+
+  .overlay {
+    height: 50vh !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contentWrap {
+    position: relative;
+    z-index: 3;
+
+    padding: 25% 5% 0;
+  }
+
+  .contentWrap h1 {
+    width: 85%;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .contentWrap button {
+    margin: 4% 0;
+    padding: 10px 25px;
+
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
   }
 }
