@@ -30,32 +30,38 @@ function DropDown(props) {
         role="presentation"
         className={styles.menuHeader}
         id={`basic-button${menu?.id}`}
-        onClick={handleClick}
       >
-        <h3>{menu.title}</h3>
-      </div>
-      <Menu
-        id={`basic-menu${menu?.id}`}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        className={styles.subMenuWrap}
-      >
-        {menu?.subMenu?.map((item, subIndex) => (
-          <MenuItem
-            disabled={item?.disabled}
-          >
-            <p
-              style={{ color: item?.labelColor || '#212B36' }}
-              className={styles.submenu}
+        <h3
+          onMouseEnter={handleClick}
+        >{menu.title}</h3>
+        <Menu
+          id={`basic-menu${menu?.id}`}
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          className={styles.subMenuWrap}
+          sx={{
+            '& .MuiPaper-root': {
+              backgroundColor: '#101010',
+            },
+          }}
+        >
+          {menu?.subMenu?.map((item, subIndex) => (
+            <MenuItem
+              disabled={item?.disabled}
             >
-              <Link href={item?.url} key={subIndex}>
-                {item?.title}
-              </Link>
-            </p>
-          </MenuItem>
-        ))}
-      </Menu>
+              <p
+                style={{ color: 'rgb(156 156 156)' }}
+                className={styles.submenu}
+              >
+                <Link href={item?.url} key={subIndex}>
+                  {item?.title}
+                </Link>
+              </p>
+            </MenuItem>
+          ))}
+        </Menu>
+      </div>
     </div>
   );
 }
