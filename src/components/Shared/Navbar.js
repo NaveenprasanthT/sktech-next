@@ -165,8 +165,72 @@ function Navbar() {
     },
   ]);
 
+  const [productMenuDataMobile, setProductMenuDataMobile] = useState([
+    {
+      id: 1,
+      title: 'POS System',
+      showDropDown: true,
+      subMenu: [
+        {
+          title: 'SK-POS Mighty Series',
+          url: '/product/pos-system?id=1',
+        },
+        {
+          title: 'SK-POS Extreme Series',
+          url: '/product/pos-system?id=2',
+        },
+        {
+          title: 'SK-POS Andriod Series',
+          url: '/product/pos-system?id=3',
+        },
+        {
+          title: 'SK-POS Compact Series',
+          url: '/product/pos-system?id=4',
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: 'Thermal Printers',
+      showDropDown: false,
+      subMenu: [
+        {
+          title: 'Ultra speed thermal printer',
+          url: '/product/thermal-printers?id=1',
+        },
+        {
+          title: 'High speed thermal printer',
+          url: '/product/thermal-printers?id=2',
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: 'Peripheral',
+      showDropDown: false,
+      subMenu: [
+        {
+          title: 'SK-POS Heavy Duty Cash Drawer',
+          url: '/product/peripheral?id=1',
+        },
+        {
+          title: 'Monitors',
+          url: '/product/peripheral?id=2',
+        },
+        {
+          title: 'Magnetic Stripe Readers (MSR)',
+          url: '/product/peripheral?id=3',
+        },
+        {
+          title: 'VFD & Pole Display',
+          url: '/product/peripheral?id=4',
+        },
+      ],
+    },
+  ]);
+
   const handleDorpDownMenu = (id) => {
-    setProductMenuData((prevValue) => prevValue.map((menu) => {
+    setProductMenuDataMobile((prevValue) => prevValue.map((menu) => {
       let finalMenu = menu;
       if (menu.id === id) {
         finalMenu = {
@@ -320,7 +384,7 @@ function Navbar() {
           <ul>
             <Link href="/" style={{ textDecoration: "none" }}><li onClick={() => setOpenNavbar(false)}>Home</li></Link>
             <div className={styles.mobileNavbarProductWrap}>
-              {productMenuData?.map((menu, index) => (
+              {productMenuDataMobile?.map((menu, index) => (
                 <div className={styles.menuContainer} key={index}>
                   <div
                     onClick={() => handleDorpDownMenu(menu.id)}

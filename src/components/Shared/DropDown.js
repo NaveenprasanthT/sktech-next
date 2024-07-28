@@ -11,8 +11,10 @@ function DropDown(props) {
 
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+  const handleClick = (event, menu) => {
+    if (menu?.subMenu?.length > 0) {  
+      setAnchorEl(event.currentTarget);
+    }
   };
 
   const handleClose = () => {
@@ -32,7 +34,7 @@ function DropDown(props) {
         id={`basic-button${menu?.id}`}
       >
         <h3
-          onMouseEnter={handleClick}
+          onMouseEnter={(e) => handleClick(e, menu)}
         >{menu.title}</h3>
         <Menu
           id={`basic-menu${menu?.id}`}
