@@ -130,8 +130,8 @@
 
 .navbarProductWrapDesktop {
   width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 
   gap: 4vw 7vw;
 
@@ -141,6 +141,10 @@
   min-height: 40vh;
   max-height: 80vh;
   overflow-y: scroll;
+}
+
+.navbarProductWrapDesktop h3 {
+  width: max-content;
 }
 
 .navbarProductWrapDesktop::-webkit-scrollbar {
@@ -261,7 +265,7 @@
 
 /* New Menubar */
 .subMenu {
-  color: var(--primary-color);
+  color: var(--title-color);
 }
 
 .submenu a {

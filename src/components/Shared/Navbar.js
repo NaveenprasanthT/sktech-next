@@ -55,6 +55,142 @@ function Navbar() {
     },
     {
       id: 2,
+      title: 'Barcode printers & Scanners',
+      showDropDown: false,
+      subMenu: [],
+    },
+    {
+      id: 3,
+      title: 'Weighing solutions',
+      showDropDown: false,
+      subMenu: [],
+    },
+    {
+      id: 4,
+      title: 'Consumables',
+      showDropDown: false,
+      subMenu: [],
+    },
+    {
+      id: 5,
+      title: 'Thermal Printers',
+      showDropDown: false,
+      subMenu: [
+        {
+          title: 'Ultra speed thermal printer',
+          url: '/product/thermal-printers?id=1',
+        },
+        {
+          title: 'High speed thermal printer',
+          url: '/product/thermal-printers?id=2',
+        },
+      ],
+    },
+    {
+      id: 6,
+      title: 'Servers desktops & Laptops',
+      showDropDown: false,
+      subMenu: [],
+    },
+    {
+      id: 7,
+      title: 'Supermarket racks',
+      showDropDown: false,
+      subMenu: [],
+    },
+    {
+      id: 8,
+      title: 'Add-on-products',
+      showDropDown: false,
+      subMenu: [],
+    },
+    {
+      id: 9,
+      title: 'Peripheral',
+      showDropDown: false,
+      subMenu: [
+        {
+          title: 'SK-POS Heavy Duty Cash Drawer',
+          url: '/product/peripheral?id=1',
+        },
+        {
+          title: 'Monitors',
+          url: '/product/peripheral?id=2',
+        },
+        {
+          title: 'Magnetic Stripe Readers (MSR)',
+          url: '/product/peripheral?id=3',
+        },
+        {
+          title: 'VFD & Pole Display',
+          url: '/product/peripheral?id=4',
+        },
+      ],
+    },
+    {
+      id: 10,
+      title: 'Office printers',
+      showDropDown: false,
+      subMenu: [],
+    },
+    {
+      id: 11,
+      title: 'Electronic cash registers (ECR)',
+      showDropDown: false,
+      subMenu: [],
+    },
+    {
+      id: 12,
+      title: 'Service & AMC',
+      showDropDown: false,
+      subMenu: [],
+    },
+    {
+      id: 13,
+      title: 'Kiosks',
+      showDropDown: false,
+      subMenu: [],
+    },
+    {
+      id: 14,
+      title: 'Retail & hospitality software',
+      showDropDown: false,
+      subMenu: [],
+    },
+    {
+      id: 15,
+      title: 'Sign boards',
+      showDropDown: false,
+      subMenu: [],
+    },
+  ]);
+
+  const [productMenuDataMobile, setProductMenuDataMobile] = useState([
+    {
+      id: 1,
+      title: 'POS System',
+      showDropDown: true,
+      subMenu: [
+        {
+          title: 'SK-POS Mighty Series',
+          url: '/product/pos-system?id=1',
+        },
+        {
+          title: 'SK-POS Extreme Series',
+          url: '/product/pos-system?id=2',
+        },
+        {
+          title: 'SK-POS Andriod Series',
+          url: '/product/pos-system?id=3',
+        },
+        {
+          title: 'SK-POS Compact Series',
+          url: '/product/pos-system?id=4',
+        },
+      ],
+    },
+    {
+      id: 2,
       title: 'Thermal Printers',
       showDropDown: false,
       subMenu: [
@@ -94,7 +230,7 @@ function Navbar() {
   ]);
 
   const handleDorpDownMenu = (id) => {
-    setProductMenuData((prevValue) => prevValue.map((menu) => {
+    setProductMenuDataMobile((prevValue) => prevValue.map((menu) => {
       let finalMenu = menu;
       if (menu.id === id) {
         finalMenu = {
@@ -144,14 +280,15 @@ function Navbar() {
             </Link>
             <div>
               <motion.li
-                onClick={handleToggle}
+                onMouseEnter={handleToggle}
                 initial={{ opacity: 0, x: 15, scale: 0.9 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
                 <span>Products & Services</span>
-                <span className={styles.menuDropDownArrow}><NavbarDropDownArrow /></span>
+                {/* <span className={styles.menuDropDownArrow}><NavbarDropDownArrow /></span> */}
+                <span style={{ display: 'none' }}></span>
               </motion.li>
               <Popper
                 open={open}
@@ -171,7 +308,7 @@ function Navbar() {
                   >
                     <Paper>
                       <ClickAwayListener onClickAway={handleClose}>
-                        <div className={styles.navbarProductWrapDesktop}>
+                        <div className={styles.navbarProductWrapDesktop} onMouseLeave={() => setOpen(false)}>
                           {productMenuData?.map((menu, index) => (
                             <div className={styles.menuContainerDesktop} key={index}>
                               {/* <div
@@ -214,14 +351,16 @@ function Navbar() {
                 Support
               </motion.li>
             </Link>
-            <motion.li
-              initial={{ opacity: 0, x: 15, scale: 0.9 }}
-              whileInView={{ opacity: 1, x: 0, scale: 1 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
-            >
-              News
-            </motion.li>
+            <Link href="/news" style={{ textDecoration: "none" }}>
+              <motion.li
+                initial={{ opacity: 0, x: 15, scale: 0.9 }}
+                whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+              >
+                News
+              </motion.li>
+            </Link>
             <Link href="/contactus" style={{ textDecoration: "none" }}>
               <motion.li
                 initial={{ opacity: 0, x: 15, scale: 0.9 }}
@@ -245,7 +384,7 @@ function Navbar() {
           <ul>
             <Link href="/" style={{ textDecoration: "none" }}><li onClick={() => setOpenNavbar(false)}>Home</li></Link>
             <div className={styles.mobileNavbarProductWrap}>
-              {productMenuData?.map((menu, index) => (
+              {productMenuDataMobile?.map((menu, index) => (
                 <div className={styles.menuContainer} key={index}>
                   <div
                     onClick={() => handleDorpDownMenu(menu.id)}
@@ -271,10 +410,18 @@ function Navbar() {
                 </div>
               ))}
             </div>
-            <Link href="/aboutus" style={{ textDecoration: "none" }}><li>About us</li></Link>
-            <li onClick={() => setOpenNavbar(false)}>Support</li>
-            <li>News</li>
-            <Link href="/contactus" style={{ textDecoration: "none" }}><li onClick={() => setOpenNavbar(false)}><span>Contact us</span> <span><MessageIcon /></span> </li></Link>
+            <Link href="/aboutus" style={{ textDecoration: "none" }}>
+              <li>About us</li>
+            </Link>
+            <Link href="/support" style={{ textDecoration: "none" }}>
+              <li onClick={() => setOpenNavbar(false)}>Support</li>
+            </Link>
+            <Link href="/news" style={{ textDecoration: "none" }}>
+              <li>News</li>
+            </Link>
+            <Link href="/contactus" style={{ textDecoration: "none" }}>
+              <li onClick={() => setOpenNavbar(false)}><span>Contact us</span> <span><MessageIcon /></span> </li>
+            </Link>
           </ul >
         </div >
       </div>

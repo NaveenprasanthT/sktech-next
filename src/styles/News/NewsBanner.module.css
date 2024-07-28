@@ -1,0 +1,70 @@
+.newsBannerWrap {
+  width: 100vw;
+  padding: 7vh 0 10vh 5vw;
+  background-image: url('/assets/News/news-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.newsBannerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
+}
+
+.contentWithNavigation {
+  display: flex;
+  gap: 4px;
+}
+
+.contentWithNavigation span {
+  color: var(--title-color);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.contentWithNavigation span:first-child {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contentWithNavigation span:first-child:hover {
+  scale: 1.1;
+  text-decoration: underline;
+}
+
+.contentWithNavigation span a {}
+
+.newsBannerTitleDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.newsBannerTitleDesc h1 {}
+
+.newsBannerTitleDesc h2 {
+  width: 33%;
+  line-height: 30px;
+
+  backdrop-filter: blur(2px);
+}
+
+@media screen and (max-width: 1300px){
+  .newsBannerTitleDesc h2 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .newsBannerTitleDesc h2 {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .newsBannerTitleDesc h2 {
+    width: 95%;
+  }
+}
